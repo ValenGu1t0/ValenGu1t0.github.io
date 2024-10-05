@@ -611,12 +611,12 @@ body {
 
 
     /* BODY */
-    .centro_body {  justify-content: center;  align-items: center;  }
+    .centro_body {  justify-content: center;  align-items: center; justify-content: center;  }
 
     /* NAV */
-    .nav_body { width: 80%;}
-    .nav_caja_botones { width: 100%; }
-    .boton_nav li  { font-size: 50%; }
+    .nav_body { width: 100%;}
+    .nav_caja_botones { width: 90%; }
+    .boton_nav li { font-size: 50%; }
 
 
     /* INTRO */
@@ -629,9 +629,9 @@ body {
     .cards_body { flex-direction: column; width: 100%; }
     .cards_body_izq, .cards_body_der { width: 100%; }
     .contacto_email input{ width: 40%;}
-    .contacto_email button { width: 25%; font-size: 50%; }
+    .contacto_email button { width: 30%; font-size: 50%; }
     .contacto_email button:hover { width: 25%; font-size: 50%; }
-
+    .cards_body_der { width: 80%; flex-direction: column; justify-content: center; align-items: center;}
 
     /* FOOTER */
     .footer_caja_botones { padding: 0; justify-content: center; align-items: center; }
@@ -650,6 +650,10 @@ body {
     .tecnologias {  width: 100%;  }
     .tecnologias_card { width: 90%; }
 }
+
+
+/* DESKTOP GIGANTE -> @media only screen and (min-width: 1200px) { }  */
+
 
 
 /* DESKTOP GIGANTE -> @media only screen and (min-width: 1200px) { }  */
