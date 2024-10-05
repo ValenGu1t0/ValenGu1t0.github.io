@@ -422,12 +422,14 @@ body {
 
 
 
-
 /* ////////////////////////////////////////////////////////////////////// MEDIA QUERYS //////////////////////////////// */
 
 
 /* ///////////////////// DESKTOP ///////////////////// */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /* BODY */
+    .centro_body {  justify-content: center;  align-items: center;  }
 
     /* NAV */
     .nav_caja_botones { width: 100%; }
@@ -460,8 +462,9 @@ body {
 
 
     /* PROYECTOS */
-    .img_proyectos { visibility: hidden; }  /* Oculto las img en el celu */
-    .proyectos_card_texto p { width: 180%;  overflow: visible;  padding: 2.5rem; }
+    .proyectos_card { flex-direction: column; justify-content: center; align-items: center; }
+    .img_proyectos { width: 100%; }  
+    .proyectos_card_texto p { width: 90%;  font-size: 1rem;  padding: 2.5rem; }
     
 
     /* TECNOLOGIAS */
@@ -473,6 +476,9 @@ body {
 /* ///////////////////// NOTEBOOK  ///////////////////// */
 @media only screen and (min-width: 769px) and (max-width: 991px) {
 
+    /* BODY */
+    .centro_body {  justify-content: center;  align-items: center;  }
+
     /* NAV */
     .nav_caja_botones { width: 100%; }
 
@@ -504,8 +510,9 @@ body {
 
 
     /* PROYECTOS */
-    .img_proyectos { visibility: hidden; }  /* Oculto las img en el celu */
-    .proyectos_card_texto p { width: 180%;  overflow: visible;  padding: 2.5rem; }
+    .proyectos_card { flex-direction: column; justify-content: center; align-items: center; }
+    .img_proyectos { width: 100%; }  
+    .proyectos_card_texto p { width: 80%;  overflow: visible;  padding: 2.5rem; }
     
 
     /* TECNOLOGIAS */
@@ -515,6 +522,9 @@ body {
 
 /* ///////////////////// TABLET  ///////////////////// */
 @media only screen and (min-width: 576px ) and (max-width: 768px) {
+
+    /* BODY */
+    .centro_body {  justify-content: center;  align-items: center;  }
 
     /* NAV */
     .nav_caja_botones { width: 100%; }
@@ -542,8 +552,9 @@ body {
 
 
     /* PROYECTOS */
-    .img_proyectos { visibility: hidden; }  /* Oculto las img en el celu */
-    .proyectos_card_texto p { width: 200%;  overflow: visible;  padding: 2.5rem;}
+    .proyectos_card { flex-direction: column; justify-content: center; align-items: center;}
+    .img_proyectos { width: 100%; }  
+    .proyectos_card_texto p { width: 80%;  overflow: visible;  padding: 2.5rem;}
     
 
     /* TECNOLOGIAS */
@@ -551,8 +562,11 @@ body {
     .tecnologias_card { width: 80%; }
 }
 
-/* ///////////////////// CELULAR ///////////////////// */
-@media only screen and (max-width: 575px) {
+/* ///////////////////// CELULAR GRANDE ///////////////////// */
+@media only screen and (min-width: 413px ) and (max-width: 575px) {
+
+    /* BODY */
+    .centro_body {  justify-content: center;  align-items: center;  }
 
     /* NAV */
     .nav_caja_botones { width: 100%; }
@@ -581,8 +595,53 @@ body {
 
     /* PROYECTOS */
 
-    .img_proyectos { visibility: hidden; }  /* Oculto las img en el celu */
-    .proyectos_card_texto p { width: 100%;  overflow: visible;  padding: 2.5rem; }
+    .proyectos_card { flex-direction: column;}
+    .img_proyectos { width: 100%; }  
+    .proyectos_card_texto p { width: 70%;  overflow: visible;  padding: 2.5rem; }
+    
+
+    /* TECNOLOGIAS */
+    .tecnologias {  width: 110%;  }
+    .tecnologias_card { width: 80%; }
+}
+
+/* ///////////////////// CELULAR GRANDE ///////////////////// */
+@media only screen and (max-width: 413px ) {
+
+
+    /* BODY */
+    .centro_body {  justify-content: center;  align-items: center;  }
+
+    /* NAV */
+    .nav_caja_botones { width: 100%; }
+    .boton_nav li  { font-size: 55%; }
+
+
+    /* INTRO */
+    .inicio_body { width: 80%; }
+    .inicio_body_caja_contacto { width: 90%; }
+    .inicio_body h1, .inicio_body p { font-size: 95%; }
+
+
+    /* CARDS DER Y IZQ */
+    .cards_body { flex-direction: column; width: 100%; }
+    .cards_body_izq, .cards_body_der { width: 90%; }
+    .contacto_email input{ width: 60%;}
+    .contacto_email button { width: 25%; font-size: 60%; }
+    .contacto_email button:hover { width: 25%; font-size: 60%; }
+
+
+    /* FOOTER */
+    .footer_caja_botones { padding: 0; justify-content: center; align-items: center; }
+    .footer { width: 100%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
+    .boton_footer li { font-size: 80%; margin: 5px;}
+
+
+    /* PROYECTOS */
+
+    .proyectos_card { flex-direction: column;}
+    .img_proyectos { width: 100%; }  
+    .proyectos_card_texto p { width: 70%;  overflow: visible;  padding: 2.5rem; }
     
 
     /* TECNOLOGIAS */
