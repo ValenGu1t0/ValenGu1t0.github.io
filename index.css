@@ -425,34 +425,30 @@ body {
 /* ////////////////////////////////////////////////////////////////////// MEDIA QUERYS //////////////////////////////// */
 
 
-/* ///////////////////// DESKTOP ///////////////////// */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+/* ///////////////////// DESKTOP GIGANTE ///////////////////// */   
+@media only screen and (min-width: 1860px) and (max-width: 2687px) {
 
     /* BODY */
     .centro_body {  justify-content: center;  align-items: center;  }
 
     /* NAV */
     .nav_caja_botones { width: 100%; }
-
     .boton_nav li  { font-size: 90%; }
 
 
     /* INTRO */
-    .inicio_body { width: 90%; }
-
-    .inicio_body_caja_contacto { width: 90%; }
-
-    .inicio_body h1, .inicio_body p { font-size: 95%; }
+    .inicio_body { width: fit-content; justify-content: center; align-items: center; }
+    .inicio_body_caja_contacto { width: 80%;  }
+    .inicio_body h1, .inicio_body p { font-size: 90%; }
 
 
     /* CARDS DER Y IZQ */
-    .cards_body { flex-direction: column; width: 100%; }
-
-    .cards_body_izq, .cards_body_der { width: 95%; }
-
-    .contacto_email input{  width: 60%;}
-
-    .contacto_email button { width: 25%; font-size: 60%; }
+    .cards_body { flex-direction: column; width: 100%; align-items: center; }
+    .cards_body_izq, .cards_body_der { width: 60%; font-size: 100%;}
+    .contacto_email input{  width: 70%; }
+    .contacto_email button { width: 20%; font-size: 70%; }
+    .botonCV { width: 97%; font-size: 1rem; } 
 
 
     /* FOOTER */
@@ -462,19 +458,21 @@ body {
 
 
     /* PROYECTOS */
-    .proyectos_card { flex-direction: column; justify-content: center; align-items: center; }
-    .img_proyectos { width: 100%; }  
-    .proyectos_card_texto p { width: 90%;  font-size: 1rem;  padding: 2.5rem; }
+    .proyectos { flex-direction: column; justify-content: center; align-items: center; }
+    .proyectos_card {   padding: 1rem 2rem; }
+    .img_proyectos { width: 100%;  }  
+    .proyectos_card_texto p { width: 100%;  font-size: 1rem;   }
     
 
     /* TECNOLOGIAS */
-    .tecnologias {  width: 100%;  }
+    .tecnologias { align-items: center;  width: 100%; }
     .tecnologias_card { width: 90%; }
-
 }
 
-/* ///////////////////// NOTEBOOK  ///////////////////// */
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+/* ///////////////////// EN ESTE RANGO VA DESKTOP NORMAL, "COMO SE VE EN MI COMPU - 16" " ///////////////////// */   
+
+/* ///////////////////// NOTEBOOK ///////////////////// */
+@media only screen and (min-width: 801px) and (max-width: 1226px) {
 
     /* BODY */
     .centro_body {  justify-content: center;  align-items: center;  }
@@ -510,9 +508,10 @@ body {
 
 
     /* PROYECTOS */
-    .proyectos_card { flex-direction: column; justify-content: center; align-items: center; }
-    .img_proyectos { width: 100%; }  
-    .proyectos_card_texto p { width: 80%;  overflow: visible;  padding: 2.5rem; }
+    .proyectos { align-items: center; }
+    .proyectos_card { flex-direction: row; justify-content: center; align-items: center; }
+    .img_proyectos { width: 80%; }  
+    .proyectos_card_texto p { width: 90%; }
     
 
     /* TECNOLOGIAS */
@@ -521,7 +520,7 @@ body {
 }
 
 /* ///////////////////// TABLET  ///////////////////// */
-@media only screen and (min-width: 576px ) and (max-width: 768px) {
+@media only screen and (min-width: 576px ) and (max-width: 800px) {
 
     /* BODY */
     .centro_body {  justify-content: center;  align-items: center;  }
@@ -552,18 +551,19 @@ body {
 
 
     /* PROYECTOS */
-    .proyectos_card { flex-direction: column; justify-content: center; align-items: center;}
+    .proyectos { align-items: center; }
+    .proyectos_card { flex-direction: column; justify-content: center; align-items: center; }
     .img_proyectos { width: 100%; }  
     .proyectos_card_texto p { width: 80%;  overflow: visible;  padding: 2.5rem;}
     
 
     /* TECNOLOGIAS */
-    .tecnologias {  width: 110%;  }
+    .tecnologias {  width: 110%;  align-items: center;}
     .tecnologias_card { width: 80%; }
 }
 
 /* ///////////////////// CELULAR GRANDE ///////////////////// */
-@media only screen and (min-width: 413px ) and (max-width: 575px) {
+@media only screen and (min-width: 471px ) and (max-width: 575px) {
 
     /* BODY */
     .centro_body {  justify-content: center;  align-items: center;  }
@@ -574,7 +574,7 @@ body {
 
 
     /* INTRO */
-    .inicio_body { width: 80%; }
+    .inicio_body { width: 80%; align-items: center; }
     .inicio_body_caja_contacto { width: 90%; }
     .inicio_body h1, .inicio_body p { font-size: 95%; }
 
@@ -594,66 +594,104 @@ body {
 
 
     /* PROYECTOS */
-
-    .proyectos_card { flex-direction: column;}
-    .img_proyectos { width: 100%; }  
-    .proyectos_card_texto p { width: 70%;  overflow: visible;  padding: 2.5rem; }
+    .proyectos { align-items: center; }
+    .proyectos_card { flex-direction: column; align-items: center; }
+    .img_proyectos { width: 90%; }  
+    .proyectos_card_texto p { width: 100%; }
     
 
     /* TECNOLOGIAS */
-    .tecnologias {  width: 110%;  }
+    .tecnologias {  width: 110%; align-items: center; } 
     .tecnologias_card { width: 80%; }
 }
 
 
-/* ///////////////////// CELULAR ///////////////////// */
-@media only screen and (max-width: 413px ) {
-
+/* ///////////////////// CELULAR  ///////////////////// */
+@media only screen  and (min-width: 412px ) and (max-width: 470px) {
 
     /* BODY */
-    .centro_body {  justify-content: center;  align-items: center; justify-content: center;  }
+    .centro_body { justify-content: center;  align-items: center;  }
 
     /* NAV */
-    .nav_body { width: 100%;}
-    .nav_caja_botones { width: 90%; }
-    .boton_nav li { font-size: 50%; }
+    .nav_body { width: 100%; }
+    .nav_caja_botones { width: 100%; }
+    .boton_nav li  { font-size: 45%; }
 
 
     /* INTRO */
-    .inicio_body { width: 80%; }
-    .inicio_body_caja_contacto { width: 90%; }
-    .inicio_body h1, .inicio_body p { font-size: 90%; }
+    .inicio_body { width: 90%; align-items: center; }
+    .inicio_body_caja_contacto { width: 100%; }
+    .inicio_body h1, .inicio_body p { font-size: 95%; }
 
 
     /* CARDS DER Y IZQ */
-    .cards_body { flex-direction: column; width: 100%; }
-    .cards_body_izq, .cards_body_der { width: 100%; }
-    .contacto_email input{ width: 40%;}
-    .contacto_email button { width: 30%; font-size: 50%; }
-    .contacto_email button:hover { width: 25%; font-size: 50%; }
-    .cards_body_der { width: 80%; flex-direction: column; justify-content: center; align-items: center;}
+    .cards_body { flex-direction: column; width: 120%; align-items: center; padding: 0; }
+    .cards_body_izq, .cards_body_der { width: 100%; padding: 0; }
+    .contacto_email input{ width: 60%;}
+    .contacto_email button { width: 25%; font-size: 60%; }
+    .contacto_email button:hover { width: 25%; font-size: 60%; }
+
 
     /* FOOTER */
-    .footer_caja_botones { padding: 0; justify-content: center; align-items: center; }
     .footer { width: 100%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
+    .footer_caja_botones { padding: 0; justify-content: center; align-items: center; }
     .boton_footer li { font-size: 80%; margin: 5px;}
 
 
     /* PROYECTOS */
-    .proyectos { width: 80%; }
-    .proyectos_card { flex-direction: column; }
+    .proyectos { width: 120%; align-items: center; }
+    .proyectos_card { flex-direction: column; align-items: center; }
     .img_proyectos { width: 100%; }  
-    .proyectos_card_texto p { width: 70%;  overflow: visible;  padding: 2.5rem; }
+    .proyectos_card_texto p { width: 100%; }
     
 
     /* TECNOLOGIAS */
-    .tecnologias {  width: 100%;  }
-    .tecnologias_card { width: 90%; }
+    .tecnologias {  width: 120%; align-items: center; } 
+    .tecnologias_card { width: 80%; }
 }
 
+/* ///////////////////// CELULAR  ///////////////////// */
+@media only screen and (max-width: 411px) {
 
-/* DESKTOP GIGANTE -> @media only screen and (min-width: 1200px) { }  */
+    /* BODY */
+    .centro_body { justify-content: center;  align-items: center;  }
+
+    /* NAV */
+    .nav_body { width: 120%; }
+    .nav_caja_botones { width: 100%; }
+    .boton_nav li  { font-size: 40%; }
 
 
+    /* INTRO */
+    .inicio_body { width: 110%; align-items: center; }
+    .inicio_body_caja_contacto { width: 100%; }
+    .inicio_body h1, .inicio_body p { font-size: 95%; }
+
+
+    /* CARDS DER Y IZQ */
+    .cards_body { flex-direction: column; width: 130%; align-items: center; padding: 0; }
+    .cards_body_izq, .cards_body_der { width: 100%; padding: 0; }
+    .contacto_email input{ width: 60%;}
+    .contacto_email button { width: 25%; font-size: 60%; }
+    .contacto_email button:hover { width: 25%; font-size: 60%; }
+
+
+    /* FOOTER */
+    .footer { width: 100%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
+    .footer_caja_botones { padding: 0; justify-content: center; align-items: center; }
+    .boton_footer li { font-size: 80%; margin: 5px;}
+
+
+    /* PROYECTOS */
+    .proyectos { width: 130%; align-items: center; }
+    .proyectos_card { flex-direction: column; align-items: center; }
+    .img_proyectos { width: 100%; }  
+    .proyectos_card_texto p { width: 100%; }
+    
+
+    /* TECNOLOGIAS */
+    .tecnologias {  width: 130%; align-items: center; } 
+    .tecnologias_card { width: 80%; }
+}
 
 /* DESKTOP GIGANTE -> @media only screen and (min-width: 1200px) { }  */
