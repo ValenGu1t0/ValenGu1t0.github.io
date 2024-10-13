@@ -1,4 +1,5 @@
 /* ////////////////////////////////////////////////////////////////////// GLOBAL /////////////////////////////////// */
+
 :root {
 
     --black: #000000;
@@ -369,6 +370,7 @@ body {
 
 .imagen_web_4:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/web8.jpg');  object-fit: contain; }
 
+.imagen_web_5:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/web10.jpg');  object-fit: contain; }
 
 /* ////////////////////////////////////////////////////////////////////// TECNOLOGÍAS - PAG3 //////////////////////////////// */
 .tecnologias { 
@@ -471,6 +473,7 @@ body {
 
 /* ///////////////////// EN ESTE RANGO VA DESKTOP NORMAL, "COMO SE VE EN MI COMPU - 16" " ///////////////////// */   
 
+
 /* ///////////////////// NOTEBOOK ///////////////////// */
 @media only screen and (min-width: 801px) and (max-width: 1226px) {
 
@@ -566,11 +569,11 @@ body {
 @media only screen and (min-width: 471px ) and (max-width: 575px) {
 
     /* BODY */
-    .centro_body {  justify-content: center;  align-items: center;  }
+    .centro_body {  justify-content: center;  align-items: center;  width: 90%; }
 
     /* NAV */
-    .nav_caja_botones { width: 100%; }
-    .boton_nav li  { font-size: 65%; }
+    .nav_caja_botones { width: 180%; }
+    .boton_nav li  { font-size: 60%; }
 
 
     /* INTRO */
@@ -605,17 +608,16 @@ body {
     .tecnologias_card { width: 80%; }
 }
 
-
 /* ///////////////////// CELULAR  ///////////////////// */
-@media only screen  and (min-width: 412px ) and (max-width: 470px) {
+@media only screen  and (min-width: 421px ) and (max-width: 470px) {
 
     /* BODY */
-    .centro_body { justify-content: center;  align-items: center;  }
+    .centro_body { justify-content: center;  align-items: center;   width: 90%;  }
 
     /* NAV */
-    .nav_body { width: 100%; }
+    .nav_body { width: 130%; }
     .nav_caja_botones { width: 100%; }
-    .boton_nav li  { font-size: 45%; }
+    .boton_nav li  { font-size: 65%; }
 
 
     /* INTRO */
@@ -651,15 +653,15 @@ body {
 }
 
 /* ///////////////////// CELULAR  ///////////////////// */
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 420px) {
 
     /* BODY */
-    .centro_body { justify-content: center;  align-items: center;  }
+    .centro_body { justify-content: center;  align-items: center; width: 100%; }
 
     /* NAV */
-    .nav_body { width: 120%; }
-    .nav_caja_botones { width: 100%; }
-    .boton_nav li  { font-size: 40%; }
+    .nav_body { width: 145%; }
+    .nav_caja_botones { width: 100%; margin: 0.5rem; }
+    .boton_nav li  { font-size: 50%; }
 
 
     /* INTRO */
@@ -693,5 +695,6 @@ body {
     .tecnologias {  width: 130%; align-items: center; } 
     .tecnologias_card { width: 80%; }
 }
+
 
 /* DESKTOP GIGANTE -> @media only screen and (min-width: 1200px) { }  */
