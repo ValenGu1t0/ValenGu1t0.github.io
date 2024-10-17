@@ -608,16 +608,16 @@ body {
     .tecnologias_card { width: 80%; }
 }
 
-/* ///////////////////// CELULAR  ///////////////////// */
-@media only screen  and (min-width: 421px ) and (max-width: 470px) {
+/* ///////////////////// CELULAR ///////////////////// */
+@media only screen  and (min-width: 376px ) and (max-width: 470px) {
 
     /* BODY */
     .centro_body { justify-content: center;  align-items: center;   width: 90%;  }
 
     /* NAV */
     .nav_body { width: 130%; }
-    .nav_caja_botones { width: 100%; }
-    .boton_nav li  { font-size: 65%; }
+    .nav_caja_botones { width: 110%; }
+    .boton_nav li  { font-size: 55%; }
 
 
     /* INTRO */
@@ -652,11 +652,11 @@ body {
     .tecnologias_card { width: 80%; }
 }
 
-/* ///////////////////// CELULAR  ///////////////////// */
-@media only screen and (max-width: 420px) {
+/* ///////////////////// CELULAR CHICO ///////////////////// */
+@media only screen and (max-width: 375px) {
 
     /* BODY */
-    .centro_body { justify-content: center;  align-items: center; width: 100%; }
+    .centro_body { justify-content: center;  align-items: center; width: 90%; }
 
     /* NAV */
     .nav_body { width: 145%; }
