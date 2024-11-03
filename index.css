@@ -112,42 +112,11 @@ body {
 
 
 
-/* ////////////////////////////////////////////////////////////////////// SECCION2 - IMGS /////////////////////////////// */
-/* 
-.img_body {
-
-    margin: 2rem 0 2rem;
-    padding: 1rem 2rem;
-    width: 95%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    justify-content: space-evenly;
-}
-
-.div_img_body {
-
-    width: 20%; 
-    max-width: 250px;
-}
-
-.div_img_body img {
-
-    max-width: 100%; 
-    height: auto;
-
-    border-radius: 30px;
-}
- */
-
-
-/* ////////////////////////////////////////////////////////////////////// SECCION 3 - CARDS /////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////// SECCION 2 - CARDS /////////////////////////////// */
 .cards_body {  display: flex;  flex-direction: row;  width: 100%; }
 
 
-/* ////////////////////////////////////////////////////////////////////// SECCION 3.1 - CARDS IZQUIERDA ////////////////// */
+/* ////////////////////////////////////////////////////////////////////// SECCION 2.1 - CARDS IZQUIERDA ////////////////// */
 .cards_body_izq {
 
     padding: 1rem;
@@ -178,7 +147,7 @@ body {
 
 
 
-/* ////////////////////////////////////////////////////////////////////// SECCION 3.2 - CARDS DERECHA /////////////////// */
+/* ////////////////////////////////////////////////////////////////////// SECCION 2.2 - CARDS DERECHA /////////////////// */
 .cards_body_der {
 
     padding: 1rem;
@@ -192,6 +161,7 @@ body {
 
 .card_info_der { 
 
+    margin-top: 1rem;
     border-radius: 20px;
     padding: 2rem 2rem;
 
@@ -338,7 +308,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 15px;
     border: 1px solid var(--moregray);
 }
@@ -448,6 +418,7 @@ body {
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 100%; align-items: center; }
     .cards_body_izq, .cards_body_der { width: 60%; font-size: 100%;}
+    .card_info_der { margin-top: 1rem; }s
     .contacto_email input{  width: 70%; }
     .contacto_email button { width: 20%; font-size: 70%; }
     .botonCV { width: 97%; font-size: 1rem; } 
@@ -482,37 +453,32 @@ body {
 
     /* NAV */
     .nav_caja_botones { width: 100%; }
-
     .boton_nav li  { font-size: 90%; }
 
 
     /* INTRO */
     .inicio_body { width: 90%; }
-
     .inicio_body_caja_contacto { width: 90%; }
-
     .inicio_body h1, .inicio_body p { font-size: 95%; }
 
 
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 100%; }
-
     .cards_body_izq, .cards_body_der { width: 95%; }
-
+    .card_info_der { margin-top: 1rem; }
     .contacto_email input{  width: 60%;}
-
     .contacto_email button { width: 25%; font-size: 60%; }
 
 
     /* FOOTER */
     .footer { width: 90%; flex-direction: column;  justify-content: center;  align-items: center; }
-    .footer_caja_botones { margin-right: 5px; justify-content: center; align-items: center; }
-    .boton_footer li { font-size: 80%; margin: 5px;}
+    .footer_caja_botones { width: 100%; font-size: 1rem; margin-right: 5px; justify-content: center; align-items: center; }
+    .boton_footer li { font-size: 80%; margin: 5px; }
 
 
     /* PROYECTOS */
     .proyectos { align-items: center; }
-    .proyectos_card { flex-direction: row; justify-content: center; align-items: center; }
+    .proyectos_card { flex-direction: column; justify-content: center; align-items: center; }
     .img_proyectos { width: 80%; }  
     .proyectos_card_texto p { width: 90%; }
     
@@ -542,15 +508,16 @@ body {
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 100%; }
     .cards_body_izq, .cards_body_der { width: 90%; }
+    .card_info_der { margin-top: 1rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
     .contacto_email button:hover { width: 25%; font-size: 60%; }
 
 
     /* FOOTER */
-    .footer_caja_botones { padding: 0; justify-content: center; align-items: center; }
+    .footer_caja_botones { padding: 0; justify-content: center; align-items: center; width: 100%; }
     .footer { width: 100%; flex-direction: column;  justify-content: flex-start;  align-items:center;  }
-    .boton_footer li { font-size: 80%; margin: 5px;}
+    .boton_footer li { font-size: 90%; margin: 5px;}
 
 
     /* PROYECTOS */
@@ -569,7 +536,7 @@ body {
 @media only screen and (min-width: 471px ) and (max-width: 575px) {
 
     /* BODY */
-    .centro_body {  justify-content: center;  align-items: center;  width: 90%; }
+    .centro_body {  justify-content: center;  align-items: center;  }
 
     /* NAV */
     .nav_caja_botones { width: 180%; }
@@ -577,24 +544,25 @@ body {
 
 
     /* INTRO */
-    .inicio_body { width: 80%; align-items: center; }
+    .inicio_body { width: 90%; align-items: center; }
     .inicio_body_caja_contacto { width: 90%; }
     .inicio_body h1, .inicio_body p { font-size: 95%; }
 
 
     /* CARDS DER Y IZQ */
-    .cards_body { flex-direction: column; width: 100%; }
-    .cards_body_izq, .cards_body_der { width: 90%; }
+    .cards_body { flex-direction: column; width: 100%; align-items: center;}
+    .cards_body_izq, .cards_body_der { width: 110%; }
+    .card_info_der { margin-top: 1rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
     .contacto_email button:hover { width: 25%; font-size: 60%; }
 
 
     /* FOOTER */
-    .footer_caja_botones { padding: 0; justify-content: center; align-items: center; }
-    .footer { width: 100%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
-    .boton_footer li { font-size: 80%; margin: 5px;}
-
+    .footer_caja_botones { width: 100%;  padding: 0; justify-content: center; align-items: center; }
+    .footer { width: 100%;  flex-direction: column;  justify-content: flex-start;  align-items:center;  }
+    .boton_footer li { font-size: 90%; margin: 5px; }
+    .footer p { text-align: center; }
 
     /* PROYECTOS */
     .proyectos { align-items: center; }
@@ -609,35 +577,39 @@ body {
 }
 
 /* ///////////////////// CELULAR ///////////////////// */
-@media only screen  and (min-width: 376px ) and (max-width: 470px) {
+@media only screen and (min-width: 376px ) and (max-width: 470px) {
 
     /* BODY */
     .centro_body { justify-content: center;  align-items: center;   width: 90%;  }
 
     /* NAV */
+    body { width: 100%;}
     .nav_body { width: 130%; }
     .nav_caja_botones { width: 110%; }
     .boton_nav li  { font-size: 55%; }
 
 
     /* INTRO */
-    .inicio_body { width: 90%; align-items: center; }
+    .inicio_body { width: 120%; align-items: center; }
     .inicio_body_caja_contacto { width: 100%; }
     .inicio_body h1, .inicio_body p { font-size: 95%; }
+    .inicio_body_caja_contacto { display: flex; justify-content: center; align-items: center; }
 
 
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 120%; align-items: center; padding: 0; }
-    .cards_body_izq, .cards_body_der { width: 100%; padding: 0; }
+    .cards_body_izq, .cards_body_der { width: 120%; padding: 0; }
+    .card_info_der { margin-top: 1rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
     .contacto_email button:hover { width: 25%; font-size: 60%; }
 
 
     /* FOOTER */
-    .footer { width: 100%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
-    .footer_caja_botones { padding: 0; justify-content: center; align-items: center; }
+    .footer { width: 130%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
+    .footer_caja_botones {  width: 100%;  padding: 0; justify-content: center; align-items: center; }
     .boton_footer li { font-size: 80%; margin: 5px;}
+    .footer p { text-align: center; }
 
 
     /* PROYECTOS */
@@ -649,7 +621,7 @@ body {
 
     /* TECNOLOGIAS */
     .tecnologias {  width: 120%; align-items: center; } 
-    .tecnologias_card { width: 80%; }
+    .tecnologias_card { width: 95%; }
 }
 
 /* ///////////////////// CELULAR CHICO ///////////////////// */
@@ -659,30 +631,32 @@ body {
     .centro_body { justify-content: center;  align-items: center; width: 90%; }
 
     /* NAV */
-    .nav_body { width: 145%; }
-    .nav_caja_botones { width: 100%; margin: 0.5rem; }
-    .boton_nav li  { font-size: 50%; }
+    .nav_body { width: 150%; }
+    .nav_caja_botones { width: 110%; margin: 0.5rem; }
+    .boton_nav li  { font-size: 60%; }
 
 
     /* INTRO */
     .inicio_body { width: 110%; align-items: center; }
     .inicio_body_caja_contacto { width: 100%; }
-    .inicio_body h1, .inicio_body p { font-size: 95%; }
+    .inicio_body h1, .inicio_body p { font-size: 100%; }
+    .inicio_body p { text-align: justify;  }
 
 
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 130%; align-items: center; padding: 0; }
-    .cards_body_izq, .cards_body_der { width: 100%; padding: 0; }
-    .contacto_email input{ width: 60%;}
+    .cards_body_izq, .cards_body_der { width: 110%; padding: 0; }
+    .card_info_der, .cards_body_izq { margin-top: 2rem; }
+    .contacto_email input{ width: 70%; padding: 1px;}
     .contacto_email button { width: 25%; font-size: 60%; }
     .contacto_email button:hover { width: 25%; font-size: 60%; }
 
 
     /* FOOTER */
-    .footer { width: 100%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
-    .footer_caja_botones { padding: 0; justify-content: center; align-items: center; }
+    .footer { width: 130%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
+    .footer_caja_botones { width: 100%; padding: 0; justify-content: center; align-items: center; }
     .boton_footer li { font-size: 80%; margin: 5px;}
-
+    .footer p { text-align: center; }
 
     /* PROYECTOS */
     .proyectos { width: 130%; align-items: center; }
@@ -693,8 +667,5 @@ body {
 
     /* TECNOLOGIAS */
     .tecnologias {  width: 130%; align-items: center; } 
-    .tecnologias_card { width: 80%; }
+    .tecnologias_card { width: 95%; }
 }
-
-
-/* DESKTOP GIGANTE -> @media only screen and (min-width: 1200px) { }  */
