@@ -101,7 +101,10 @@ body {
 
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+
 }
 
 .botoncontacto {  margin-right: 2rem; transition: transform 0.3s ease-in-out; }
@@ -346,7 +349,7 @@ body {
 .tecnologias { 
     
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: flex-start;
     box-sizing: border-box;
 
@@ -371,7 +374,6 @@ body {
 }
 
 .tecnologias_card:hover {   background-color: var(--moregray);   }
-
 
 .tecnologias_card_titulo {
 
@@ -457,9 +459,15 @@ body {
 
 
     /* INTRO */
-    .inicio_body { width: 90%; }
+    .inicio_body { width: 80%; }
     .inicio_body_caja_contacto { width: 90%; }
-    .inicio_body h1, .inicio_body p { font-size: 95%; }
+    .inicio_body h1 { font-size: 120%; }
+    .inicio_body p { font-size: 85%; }
+
+
+    /* BOTONES CONTACTO */
+    .inicio_body_caja_contacto { display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;}
+    .inicio_body_caja_contacto a { font-size: larger; font-weight: 600; }
 
 
     /* CARDS DER Y IZQ */
@@ -492,22 +500,27 @@ body {
 @media only screen and (min-width: 576px ) and (max-width: 800px) {
 
     /* BODY */
-    .centro_body {  justify-content: center;  align-items: center;  }
+    .centro_body { justify-content: center;  align-items: center;   width: 90%;  }
 
     /* NAV */
-    .nav_caja_botones { width: 100%; }
-    .boton_nav li  { font-size: 75%; }
-
+    body { width: 100%;}
+    .nav_body { width: 90%; }
+    .nav_caja_botones { width: 110%; height: 110%; }
+    .boton_nav li { font-size: 80%; font-weight: 700; }
+    #sobre_mi { display: none; }
 
     /* INTRO */
-    .inicio_body { width: 80%; }
-    .inicio_body_caja_contacto { width: 90%; }
-    .inicio_body h1, .inicio_body p { font-size: 95%; }
+    .inicio_body { width: 90%; align-items: center; }
+    .inicio_body h1 { font-size: 110%; }
+    .inicio_body p { font-size: 85%; }
 
+    /* BOTONES CONTACTO */
+    .inicio_body_caja_contacto { display: flex; align-items: center; margin-bottom: 1rem; }
+    .inicio_body_caja_contacto a { font-size: larger; }
 
     /* CARDS DER Y IZQ */
-    .cards_body { flex-direction: column; width: 100%; }
-    .cards_body_izq, .cards_body_der { width: 90%; }
+    .cards_body { flex-direction: column; width: 100%; align-items: center; padding: 0; }
+    .cards_body_izq, .cards_body_der { width: 100%; padding: 0; }
     .card_info_der { margin-top: 1rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
@@ -515,43 +528,49 @@ body {
 
 
     /* FOOTER */
-    .footer_caja_botones { padding: 0; justify-content: center; align-items: center; width: 100%; }
-    .footer { width: 100%; flex-direction: column;  justify-content: flex-start;  align-items:center;  }
-    .boton_footer li { font-size: 90%; margin: 5px;}
+    .footer { width: 130%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
+    .footer_caja_botones {  width: 100%;  padding: 0; justify-content: center; align-items: center; }
+    .boton_footer li { font-size: 100%; margin: 5px; font-weight: 700; }
+    .footer p { text-align: center; }
 
 
     /* PROYECTOS */
-    .proyectos { align-items: center; }
-    .proyectos_card { flex-direction: column; justify-content: center; align-items: center; }
+    .proyectos { width: 100%; align-items: center; }
+    .proyectos_card { flex-direction: column; align-items: center; }
     .img_proyectos { width: 100%; }  
-    .proyectos_card_texto p { width: 80%;  overflow: visible;  padding: 2.5rem;}
+    .proyectos_card_texto p { width: 100%; }
     
 
     /* TECNOLOGIAS */
-    .tecnologias {  width: 110%;  align-items: center;}
-    .tecnologias_card { width: 80%; }
+    .tecnologias {  width: 100%; align-items: center; } 
+    .tecnologias_card { width: 95%; }
 }
 
 /* ///////////////////// CELULAR GRANDE ///////////////////// */
 @media only screen and (min-width: 471px ) and (max-width: 575px) {
 
     /* BODY */
-    .centro_body {  justify-content: center;  align-items: center;  }
+    .centro_body { justify-content: center;  align-items: center;   width: 90%;  }
 
     /* NAV */
-    .nav_caja_botones { width: 180%; }
-    .boton_nav li  { font-size: 60%; }
-
+    body { width: 100%;}
+    .nav_body { width: 100%; }
+    .nav_caja_botones { width: 110%; height: 110%; }
+    .boton_nav li { font-size: 80%; font-weight: 700; }
+    #sobre_mi { display: none; }
 
     /* INTRO */
-    .inicio_body { width: 90%; align-items: center; }
-    .inicio_body_caja_contacto { width: 90%; }
-    .inicio_body h1, .inicio_body p { font-size: 95%; }
+    .inicio_body { width: 100%; align-items: center; }
+    .inicio_body h1 { font-size: 110%; }
+    .inicio_body p { font-size: 85%; }
 
+    /* BOTONES CONTACTO */
+    .inicio_body_caja_contacto { display: flex; align-items: center; margin-bottom: 1rem; }
+    .inicio_body_caja_contacto a { font-size: larger; }
 
     /* CARDS DER Y IZQ */
-    .cards_body { flex-direction: column; width: 100%; align-items: center;}
-    .cards_body_izq, .cards_body_der { width: 110%; }
+    .cards_body { flex-direction: column; width: 120%; align-items: center; padding: 0; }
+    .cards_body_izq, .cards_body_der { width: 100%; padding: 0; }
     .card_info_der { margin-top: 1rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
@@ -559,21 +578,22 @@ body {
 
 
     /* FOOTER */
-    .footer_caja_botones { width: 100%;  padding: 0; justify-content: center; align-items: center; }
-    .footer { width: 100%;  flex-direction: column;  justify-content: flex-start;  align-items:center;  }
-    .boton_footer li { font-size: 90%; margin: 5px; }
+    .footer { width: 130%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
+    .footer_caja_botones {  width: 100%;  padding: 0; justify-content: center; align-items: center; }
+    .boton_footer li { font-size: 100%; margin: 5px; font-weight: 700; }
     .footer p { text-align: center; }
 
+
     /* PROYECTOS */
-    .proyectos { align-items: center; }
+    .proyectos { width: 100%; align-items: center; }
     .proyectos_card { flex-direction: column; align-items: center; }
-    .img_proyectos { width: 90%; }  
+    .img_proyectos { width: 100%; }  
     .proyectos_card_texto p { width: 100%; }
     
 
     /* TECNOLOGIAS */
-    .tecnologias {  width: 110%; align-items: center; } 
-    .tecnologias_card { width: 80%; }
+    .tecnologias {  width: 100%; align-items: center; } 
+    .tecnologias_card { width: 95%; }
 }
 
 /* ///////////////////// CELULAR ///////////////////// */
@@ -585,20 +605,22 @@ body {
     /* NAV */
     body { width: 100%;}
     .nav_body { width: 130%; }
-    .nav_caja_botones { width: 110%; }
-    .boton_nav li  { font-size: 55%; }
-
+    .nav_caja_botones { width: 110%; height: 110%; }
+    .boton_nav li { font-size: 80%; font-weight: 700; }
+    #sobre_mi { display: none; }
 
     /* INTRO */
-    .inicio_body { width: 120%; align-items: center; }
-    .inicio_body_caja_contacto { width: 100%; }
-    .inicio_body h1, .inicio_body p { font-size: 95%; }
-    .inicio_body_caja_contacto { display: flex; justify-content: center; align-items: center; }
+    .inicio_body { width: 100%; align-items: center; }
+    .inicio_body h1 { font-size: 110%; }
+    .inicio_body p { font-size: 85%; }
 
+    /* BOTONES CONTACTO */
+    .inicio_body_caja_contacto { display: flex; align-items: center; margin-bottom: 1rem; }
+    .inicio_body_caja_contacto a { font-size: larger; }
 
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 120%; align-items: center; padding: 0; }
-    .cards_body_izq, .cards_body_der { width: 120%; padding: 0; }
+    .cards_body_izq, .cards_body_der { width: 110%; padding: 0; }
     .card_info_der { margin-top: 1rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
@@ -608,7 +630,7 @@ body {
     /* FOOTER */
     .footer { width: 130%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
     .footer_caja_botones {  width: 100%;  padding: 0; justify-content: center; align-items: center; }
-    .boton_footer li { font-size: 80%; margin: 5px;}
+    .boton_footer li { font-size: 100%; margin: 5px; font-weight: 700; }
     .footer p { text-align: center; }
 
 
@@ -628,26 +650,32 @@ body {
 @media only screen and (max-width: 375px) {
 
     /* BODY */
-    .centro_body { justify-content: center;  align-items: center; width: 90%; }
+    .centro_body { justify-content: center; align-items: center; width: 100%; }
+
 
     /* NAV */
-    .nav_body { width: 150%; }
+    .nav_body { width: 130%; }
     .nav_caja_botones { width: 110%; margin: 0.5rem; }
-    .boton_nav li  { font-size: 60%; }
+    .boton_nav li  { font-size: 80%; font-weight: 600; }
+    #sobre_mi { display: none; }
 
 
     /* INTRO */
     .inicio_body { width: 110%; align-items: center; }
-    .inicio_body_caja_contacto { width: 100%; }
-    .inicio_body h1, .inicio_body p { font-size: 100%; }
-    .inicio_body p { text-align: justify;  }
+    .inicio_body h1 { font-size: 120%; }
+    .inicio_body p {  text-align: justify; font-size: 90%; }
+
+
+    /* BOTONES CONTACTO */
+    .inicio_body_caja_contacto { width: 100%; display: flex; align-items: center; justify-content: flex-end; }
+    .inicio_body_caja_contacto a { font-size: larger; }
 
 
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 130%; align-items: center; padding: 0; }
-    .cards_body_izq, .cards_body_der { width: 110%; padding: 0; }
+    .cards_body_izq, .cards_body_der { width: 100%; padding: 0; }
     .card_info_der, .cards_body_izq { margin-top: 2rem; }
-    .contacto_email input{ width: 70%; padding: 1px;}
+    .contacto_email input { width: 70%; padding: 1px;}
     .contacto_email button { width: 25%; font-size: 60%; }
     .contacto_email button:hover { width: 25%; font-size: 60%; }
 
@@ -655,8 +683,9 @@ body {
     /* FOOTER */
     .footer { width: 130%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
     .footer_caja_botones { width: 100%; padding: 0; justify-content: center; align-items: center; }
-    .boton_footer li { font-size: 80%; margin: 5px;}
+    .boton_footer li { font-size: 100%; margin: 5px; font-weight: 700;}
     .footer p { text-align: center; }
+
 
     /* PROYECTOS */
     .proyectos { width: 130%; align-items: center; }
@@ -666,6 +695,6 @@ body {
     
 
     /* TECNOLOGIAS */
-    .tecnologias {  width: 130%; align-items: center; } 
+    .tecnologias {  width: 110%; align-items: center; } 
     .tecnologias_card { width: 95%; }
 }
