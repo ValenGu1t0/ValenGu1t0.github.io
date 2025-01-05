@@ -220,11 +220,10 @@ body {
 
 .contacto_email button:active { 
 
-    border: 1px solid var(--letras_link);
-
     padding: 5px;
     border-radius: 10px;
     width: 20%;
+    border: 1px solid var(--letras_link);
 }
 
 
@@ -337,9 +336,13 @@ body {
 
 .imagen_web_2:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/web4.jpg');  object-fit: contain; }
 
-.imagen_web_3:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/web6.jpg');  object-fit: contain; }
+.imagen_web_3:hover { transform: scale(1.1); transition: transform 0.3s ease; object-fit: contain; }
 
 .imagen_web_4:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/web8.jpg');  object-fit: contain; }
+
+.imagen_web_5:hover { transform: scale(1.1); transition: transform 0.3s ease; object-fit: contain; }
+
+
 
 
 /* ////////////////////////////////////////////////////////////////////// TECNOLOGÍAS - PAG3 //////////////////////////////// */
