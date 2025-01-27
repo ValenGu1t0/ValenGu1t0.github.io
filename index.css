@@ -79,7 +79,7 @@ body {
     text-decoration: none;
 }
 
-.boton_nav:hover {  color: var(--letras_link);  }
+.boton_nav:hover {  color: var(--letras_link); transition:ease-in-out; transition-duration: 0.2s;  }
 
 
 
