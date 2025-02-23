@@ -251,6 +251,83 @@ body {
 .botonCV:active { border: 1px solid var(--letras_link); }
 
 
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////// SECCION 2.3 - SCROLLER //////////////////////////////// */
+.scroller-section {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2rem;
+}
+
+
+.scroller {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    height: 3rem;
+
+    mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0)
+    );
+}
+
+
+@keyframes scrollleft {  to { left: -200px }  }
+
+.logos {
+
+    max-width: 100%;
+    height: 3rem;
+    position: absolute;
+
+    /* No rompe los logos con responsive */
+    left: max(calc(200px * 8), 100%);  
+
+    animation-name: scrollleft;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Agregar un item por cada marca nueva que se sume */
+.item1 { animation-delay: calc(40s / 8 * (8 - 1) * -1); }
+  
+.item2 { animation-delay: calc(40s / 8 * (8 - 2) * -1); }
+  
+.item3 { animation-delay: calc(40s / 8 * (8 - 3) * -1); }
+  
+.item4 { animation-delay: calc(40s / 8 * (8 - 4) * -1); }
+  
+.item5 { animation-delay: calc(40s / 8 * (8 - 5) * -1); }
+  
+.item6 { animation-delay: calc(40s / 8 * (8 - 6) * -1); }
+  
+.item7 { animation-delay: calc(40s / 8 * (8 - 7) * -1); }
+  
+.item8 { animation-delay: calc(30s / 8 * (8 - 8) * -1);} 
+
+
+
+
+
+
+
 /* ////////////////////////////////////////////////////////////////////// SECCION 4 - FOOTER //////////////////////////////// */
 .footer { 
     
@@ -332,13 +409,13 @@ body {
     transition: transform 0.5s ease;
 }
 
-.imagen_web_1:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/web2.jpg');  object-fit: contain;  }
+.imagen_web_1:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/proyectos/web2.jpg');  object-fit: contain;  }
 
-.imagen_web_2:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/web4.jpg');  object-fit: contain; }
+.imagen_web_2:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/proyectos/web4.jpg');  object-fit: contain; }
 
 .imagen_web_3:hover { transform: scale(1.1); transition: transform 0.3s ease; object-fit: contain; }
 
-.imagen_web_4:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/web8.jpg');  object-fit: contain; }
+.imagen_web_4:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/proyectos/web8.jpg');  object-fit: contain; }
 
 .imagen_web_5:hover { transform: scale(1.1); transition: transform 0.3s ease; object-fit: contain; }
 
@@ -397,9 +474,6 @@ body {
 
 
 /* ////////////////////////////////////////////////////////////////////// MEDIA QUERYS //////////////////////////////// */
-
-
-/* ///////////////////// EN ESTE RANGO VA DESKTOP NORMAL, "COMO SE VE EN MI COMPU - 16" " ///////////////////// */   
 
 
 /* ///////////////////// NOTEBOOK ///////////////////// */ 
@@ -461,7 +535,7 @@ body {
 
 
     /* BOTONES CONTACTO */
-    .inicio_body_caja_contacto { width: 50%; display: flex; align-items: center; }
+    .inicio_body_caja_contacto { width: 60%; display: flex; justify-content: space-between; align-items: center; }
 
 
     /* CARDS DER Y IZQ */
@@ -504,11 +578,11 @@ body {
 
     /* INTRO */
     .inicio_body { width: 100%;  }
-    .inicio_body h1 { font-size: 110%; }
+    .inicio_body h1 { font-size: 1.5rem; }
     .inicio_body p { font-size: 85%; }
 
     /* BOTONES CONTACTO */
-    .inicio_body_caja_contacto { width: 60%; display: flex; align-items: center; }
+    .inicio_body_caja_contacto { width: 70%; display: flex; justify-content: space-between; align-items: center; }
 
 
     /* CARDS DER Y IZQ */
@@ -551,7 +625,7 @@ body {
 
     /* INTRO */
     .inicio_body { width: 100%; }
-    .inicio_body h1 { font-size: 110%; }
+    .inicio_body h1 { font-size: 1.5rem; }
     .inicio_body p { font-size: 85%; }
 
     /* BOTONES CONTACTO */
