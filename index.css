@@ -79,7 +79,7 @@ body {
     text-decoration: none;
 }
 
-.boton_nav:hover {  color: var(--letras_link); transition:ease-in-out; transition-duration: 0.2s;  }
+.boton_nav:hover {  color: var(--letras_link); transition: ease-in-out; transition-duration: 0.2s;  }
 
 
 
@@ -280,7 +280,7 @@ body {
     text-decoration: none;
 }
 
-.boton_footer:hover { color: var(--letras_link); } 
+.boton_footer:hover { color: var(--letras_link); transition: ease-in-out; transition-duration: 0.2s; } 
 
 .footer p { font-size: small; color: var(--moremoregray); }
 
