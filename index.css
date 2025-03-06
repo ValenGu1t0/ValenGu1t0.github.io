@@ -415,10 +415,9 @@ body {
 
 .imagen_web_3:hover { transform: scale(1.1); transition: transform 0.3s ease; object-fit: contain; }
 
-.imagen_web_4:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/proyectos/web8.jpg');  object-fit: contain; }
-
 .imagen_web_5:hover { transform: scale(1.1); transition: transform 0.3s ease; object-fit: contain; }
 
+.imagen_web_7:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/proyectos/web8.jpg');  object-fit: contain; }
 
 
 
