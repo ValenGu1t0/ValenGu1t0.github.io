@@ -253,8 +253,6 @@ body {
 
 
 
-
-
 /* ////////////////////////////////////////////////////////////////////// SECCION 2.3 - SCROLLER //////////////////////////////// */
 .scroller-section {
 
@@ -265,7 +263,6 @@ body {
     align-items: center;
     margin-block: 2rem;
 }
-
 
 .scroller {
 
@@ -287,7 +284,6 @@ body {
     );
 }
 
-
 @keyframes scrollleft {  to { left: -200px }  }
 
 .logos {
@@ -297,7 +293,7 @@ body {
     position: absolute;
 
     /* No rompe los logos con responsive */
-    left: max(calc(200px * 8), 100%);  
+    left: max(calc(200px * 9), 100%);  
 
     animation-name: scrollleft;
     animation-duration: 40s;
@@ -306,21 +302,23 @@ body {
 }
 
 /* Agregar un item por cada marca nueva que se sume */
-.item1 { animation-delay: calc(40s / 8 * (8 - 1) * -1); }
+.item1 { animation-delay: calc(40s / 9 * (9 - 1) * -1); }
   
-.item2 { animation-delay: calc(40s / 8 * (8 - 2) * -1); }
+.item2 { animation-delay: calc(40s / 9 * (9 - 2) * -1); }
   
-.item3 { animation-delay: calc(40s / 8 * (8 - 3) * -1); }
+.item3 { animation-delay: calc(40s / 9 * (9 - 3) * -1); }
   
-.item4 { animation-delay: calc(40s / 8 * (8 - 4) * -1); }
+.item4 { animation-delay: calc(40s / 9 * (9 - 4) * -1); }
   
-.item5 { animation-delay: calc(40s / 8 * (8 - 5) * -1); }
+.item5 { animation-delay: calc(40s / 9 * (9 - 5) * -1); }
   
-.item6 { animation-delay: calc(40s / 8 * (8 - 6) * -1); }
+.item6 { animation-delay: calc(40s / 9 * (9 - 6) * -1); }
   
-.item7 { animation-delay: calc(40s / 8 * (8 - 7) * -1); }
+.item7 { animation-delay: calc(40s / 9 * (9 - 7) * -1); }
   
-.item8 { animation-delay: calc(30s / 8 * (8 - 8) * -1);} 
+.item8 { animation-delay: calc(40s / 9 * (9 - 8) * -1);} 
+
+.item9 { animation-delay: calc(40s / 9 * (9 - 9) * -1);} 
 
 
 
@@ -343,9 +341,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     gap: 1rem;
-
     width: 30%;
-
     list-style: none;
 }
 
@@ -366,11 +362,13 @@ body {
 /* ////////////////////////////////////////////////////////////////////// PROYECTOS - PAG2 //////////////////////////////// */
 .proyectos { 
     
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    box-sizing: border-box;
-
+    align-items: center;
+    gap: 2rem;
+    
     width: 100%;
     padding: 1rem;
 }
@@ -379,16 +377,17 @@ body {
     
     width: 93%;
     height: auto;
-    margin-bottom: 2rem;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     padding: 1rem 2rem;
     border-radius: 15px;
     border: 1px solid var(--moregray);
 }
+
 .proyectos_card:hover {  background-color: var(--moregray); }
 
 .proyectos_card_texto { max-width: 500px; height: auto; text-align: justify; }
@@ -409,16 +408,17 @@ body {
     transition: transform 0.5s ease;
 }
 
-.imagen_web_1:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/proyectos/web2.jpg');  object-fit: contain;  }
+.imagen_web_1:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web2.jpg');  object-fit: contain;  }
 
-.imagen_web_2:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/proyectos/web4.jpg');  object-fit: contain; }
+.imagen_web_2:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web4.jpg');  object-fit: contain; }
 
-.imagen_web_3:hover { transform: scale(1.1); transition: transform 0.3s ease; object-fit: contain; }
+.imagen_web_3:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; object-fit: contain; }
 
-.imagen_web_5:hover { transform: scale(1.1); transition: transform 0.3s ease; object-fit: contain; }
+.imagen_web_5:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; object-fit: contain; }
 
-.imagen_web_7:hover { transform: scale(1.1); transition: transform 0.3s ease; content: url('img/proyectos/web8.jpg');  object-fit: contain; }
+.imagen_web_7:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web8.jpg');  object-fit: contain; }
 
+.imagen_web_9:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web10.jpg');  object-fit: contain; }
 
 
 /* ////////////////////////////////////////////////////////////////////// TECNOLOGÍAS - PAG3 //////////////////////////////// */
