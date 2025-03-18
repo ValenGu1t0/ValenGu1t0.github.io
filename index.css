@@ -114,7 +114,13 @@ body {
 
 .botoncontacto:link, .botoncontacto:visited { color: var(--moremoregray); }
 
-.botoncontacto:hover {  color: var(--letras_link); transform: scale(1.2); transition: transform 0.3s ease-in-out;}
+.botoncontacto:hover {  
+    
+    color: var(--letras_link); 
+    transform: scale(1.2); 
+    transition: transform 0.3s ease-in-out; 
+    cursor: pointer;
+}
 
 
 
@@ -368,7 +374,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
-    
     width: 100%;
     padding: 1rem;
 }
@@ -377,24 +382,44 @@ body {
     
     width: 93%;
     height: auto;
+    padding: 1rem 2rem;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 
-    padding: 1rem 2rem;
     border-radius: 15px;
     border: 1px solid var(--moregray);
 }
 
-.proyectos_card:hover {  background-color: var(--moregray); }
+.proyectos_card_info { 
+    
+    color: var(--white);
+    max-width: 500px; 
+    height: auto; 
+    text-align: justify; 
+}
 
-.proyectos_card_texto { max-width: 500px; height: auto; text-align: justify; }
+.proyectos_card_tecnologias {
+
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.proyectos_card_tecnologias_iconos {
+
+    max-width: 2rem;
+    object-fit: contain;
+}
+
+.proyectos_card:hover {  background-color: var(--moregray); }
 
 .proyectos_card_texto p { color: var(--letras_parrafo); font-size: small;  }
 
-.proyectos_card_texto h3 { color: var(--white); }
+.proyectos_card_texto h2, .proyectos_card_texto h3 { color: var(--white); }
 
 .img_proyectos { 
 
@@ -465,11 +490,6 @@ body {
 
 .tecnologias_card_titulo img { max-width: 50px; }
 
-/* Cuando aprenda react saco este */
-#process { max-width: 300px; }
-    
-
-
 
 
 /* ////////////////////////////////////////////////////////////////////// MEDIA QUERYS //////////////////////////////// */
@@ -507,12 +527,12 @@ body {
 
     /* PROYECTOS */
     .proyectos { align-items: center; }
-    .proyectos_card { width: 70%; flex-direction: column; align-items: center; }
+    .proyectos_card { width: 70%; max-width: 500px; flex-direction: column; align-items: center; }
     
 
     /* TECNOLOGIAS */
     .tecnologias {  align-items: center;  }
-    .tecnologias_card { width: 70%; }
+    .tecnologias_card { width: 70%; max-width: 600px; }
 }
 
 /* ///////////////////// TABLET  ///////////////////// */
