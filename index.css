@@ -3,7 +3,7 @@
 :root {
 
     --black: #000000;
-    --white: #ffffff;
+    --white: #f5f5f5;
     --gray: #181818;
     --moregray: #2c2c2c;
     --moremoregray: #a5a5a5;
@@ -154,7 +154,7 @@ body {
 
 .card_info time { color: var(--letras_link); font-size: smaller; }
 
-.card_info:hover {  background-color: var(--moregray); }
+.card_info:hover {  background-color: var(--moregray); transition: ease-in-out; transition-duration: 0.2s; }
 
 
 
@@ -222,15 +222,20 @@ body {
 
 }
 
-.contacto_email button:hover { cursor:pointer; background-color: var(--gray); }
-
-.contacto_email button:active { 
-
-    padding: 5px;
-    border-radius: 10px;
-    width: 20%;
-    border: 1px solid var(--letras_link);
+.contacto_email button:hover { 
+    
+    cursor: pointer; 
+    background-color: var(--gray); 
+    border: 1px solid var(--letras_link); 
+    transition: ease-in-out; 
+    transition-duration: 0.2s; 
 }
+
+.contacto_email button:active {  border: 1px solid var(--letras_link);  }
+
+/* Corrije el espaciado entre el titulo y el icono del curriculum */
+.fa-solid {  color: var(--letras_link); margin-right: 10px; }
+
 
 
 /* ////////// CURRICULUM ////////// */
@@ -247,12 +252,19 @@ body {
     border: 1px solid var(--moregray); 
     background-color: var(--moregray);
 
+    font-weight: 600;
     text-align: center;
     text-decoration: none;
     color: var(--white);
 }
 
-.botonCV:hover { background-color: var(--gray); }
+.botonCV:hover { 
+    
+    background-color: var(--gray); 
+    border: 1px solid var(--letras_link);
+    transition: ease-in-out; 
+    transition-duration: 0.2s; 
+}
 
 .botonCV:active { border: 1px solid var(--letras_link); }
 
@@ -415,7 +427,7 @@ body {
     object-fit: contain;
 }
 
-.proyectos_card:hover {  background-color: var(--moregray); }
+.proyectos_card:hover { background-color: var(--moregray); transition: ease-in-out; transition-duration: 0.2s; }
 
 .proyectos_card_texto p { color: var(--letras_parrafo); font-size: small;  }
 
@@ -474,7 +486,7 @@ body {
     text-align: justify;
 }
 
-.tecnologias_card:hover {  background-color: var(--moregray);  }
+.tecnologias_card:hover {  background-color: var(--moregray); transition: ease-in-out; transition-duration: 0.2s; }
 
 .tecnologias_card_titulo {
 
