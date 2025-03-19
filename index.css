@@ -1,5 +1,7 @@
 /* ////////////////////////////////////////////////////////////////////// GLOBAL /////////////////////////////////// */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
 
     --black: #000000;
@@ -11,12 +13,23 @@
     --letras_link: #4fc7b3;
 }
 
+.light-mode {
+
+    --black: #f0f0f0;
+    --white: #131313;
+    --gray: #e2e2e2;
+    --moregray: #acacac;
+    --moremoregray: #636363;
+    --letras_parrafo: #181818;
+    --letras_link: #cf7017;
+}
+
 * {
-    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
 }
 
-.link_en_p {  text-decoration: none;   color: var(--letras_link); }
+.link_en_p {  text-decoration: none;  color: var(--letras_link); }
 
 
 /* ////////////////////////////////////////////////////////////////////// BODY /////////////////////////////////// */
@@ -33,6 +46,8 @@ body {
     flex-direction: column;
     justify-content: center; 
     align-items: center;
+
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .centro_body {
@@ -46,7 +61,6 @@ body {
 
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -59,10 +73,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
+    align-items: center;
     gap: 1rem;
 
-    width: 40%;
+    width: 35%;
     padding: 10px 1rem;
 
     background-color: var(--moregray);
@@ -81,7 +95,14 @@ body {
 
 .boton_nav:hover {  color: var(--letras_link); transition: ease-in-out; transition-duration: 0.2s;  }
 
+#themeToggle {
 
+    font-size: smaller;
+    color: var(--white);
+    cursor: pointer;
+}
+
+#themeToggle:hover {  color: var(--letras_link); transition: ease-in-out; transition-duration: 0.2s;  }
 
 /* ////////////////////////////////////////////////////////////////////// SECCION1 - INTRODUCCION /////////////////////// */
 
@@ -90,7 +111,6 @@ body {
     padding: 0 2rem;
     width: 55%;
     color: var(--moremoregray);
-   
 }
 
 .inicio_body h1 { font-size: 2.5em; color: var(--white); }
@@ -107,7 +127,6 @@ body {
     font-size: 1.5rem;
     margin: 1.5rem 0;
     width: 30%;
-
 }
 
 .botoncontacto { transition: transform 0.3s ease-in-out; }
@@ -482,6 +501,7 @@ body {
     padding: 2rem 2rem;
     border-radius: 15px;
     border: 1px solid var(--moregray);
+    color: var(--letras_parrafo);
 
     text-align: justify;
 }
@@ -498,7 +518,7 @@ body {
 
 .tecnologias_card_titulo h2 {  color: var(--white); }
 
-.tecnologias_card p {  color: var(--moremoregray); }
+.tecnologias_card p {  color: var(--letras_parrafo); }
 
 .tecnologias_card_titulo img { max-width: 50px; }
 
@@ -558,7 +578,7 @@ body {
     /* NAV */
     .nav_caja_botones { width: 110%; height: auto; }
     .boton_nav li { font-size: 80%; font-weight: 600; }
-    #sobre_mi { display: none; }
+    #github { display: none; }
 
 
     /* INTRO */
@@ -605,7 +625,7 @@ body {
     /* NAV */
     .nav_caja_botones { width: 100%; height: auto; }
     .boton_nav li { font-size: 80%; font-weight: 600; }
-    #sobre_mi { display: none; }
+    #github { display: none; }
 
     /* INTRO */
     .inicio_body { width: 100%;  }
@@ -652,7 +672,7 @@ body {
     /* NAV */
     .nav_caja_botones { width: 100%; height: auto; }
     .boton_nav li { font-size: 80%; font-weight: 600; }
-    #sobre_mi { display: none; }
+    #github { display: none; }
 
     /* INTRO */
     .inicio_body { width: 100%; }
@@ -699,7 +719,7 @@ body {
     .nav_body { width: 130%; }
     .nav_caja_botones { width: 110%; margin: 0.5rem; }
     .boton_nav li  { font-size: 80%; font-weight: 600; }
-    #sobre_mi { display: none; }
+    #github { display: none; }
 
 
     /* INTRO */
