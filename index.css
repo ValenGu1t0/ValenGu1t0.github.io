@@ -17,17 +17,14 @@
 
     --black: #f0f0f0;
     --white: #131313;
-    --gray: #e2e2e2;
-    --moregray: #acacac;
-    --moremoregray: #636363;
+    --gray: #ebebeb;
+    --moregray: #a5a5a5;
+    --moremoregray: #636363e0;
     --letras_parrafo: #181818;
     --letras_link: #cf7017;
 }
 
-* {
-    font-family: "Inter", sans-serif;
-    scroll-behavior: smooth;
-}
+* {  font-family: "Inter", sans-serif;  scroll-behavior: smooth;  }
 
 .link_en_p {  text-decoration: none;  color: var(--letras_link); }
 
@@ -97,12 +94,15 @@ body {
 
 #themeToggle {
 
-    font-size: smaller;
+    margin-left: 0.5rem;
+    font-size: medium;
     color: var(--white);
     cursor: pointer;
 }
 
 #themeToggle:hover {  color: var(--letras_link); transition: ease-in-out; transition-duration: 0.2s;  }
+
+
 
 /* ////////////////////////////////////////////////////////////////////// SECCION1 - INTRODUCCION /////////////////////// */
 
