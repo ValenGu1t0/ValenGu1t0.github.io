@@ -355,9 +355,9 @@ body {
   
 .item7 { animation-delay: calc(40s / 9 * (9 - 7) * -1); }
   
-.item8 { animation-delay: calc(40s / 9 * (9 - 8) * -1);} 
+.item8 { animation-delay: calc(40s / 9 * (9 - 8) * -1); } 
 
-.item9 { animation-delay: calc(40s / 9 * (9 - 9) * -1);} 
+.item9 { animation-delay: calc(40s / 9 * (9 - 9) * -1); } 
 
 
 
