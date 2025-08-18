@@ -173,11 +173,9 @@ body {
 
 .card_info p { font-size: smaller; color:var(--letras_parrafo); text-align: justify; }
 
-.card_info time { color: var(--letras_link); font-size: smaller; }
-
 .card_info:hover {  background-color: var(--moregray); transition: ease-in-out; transition-duration: 0.2s; }
 
-
+.subtitulo { color: var(--letras_link); font-size: smaller; }
 
 
 /* ////////////////////////////////////////////////////////////////////// SECCION 2.2 - CARDS DERECHA /////////////////// */
