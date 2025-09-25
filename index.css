@@ -30,6 +30,7 @@
 
 .link_en_p {  text-decoration: none;  color: var(--letras_link); }
 
+.pruebas_tecnicas { color: white; }
 
 /* ////////////////////////////////////////////////////////////////////// BODY /////////////////////////////////// */
 
@@ -355,7 +356,7 @@ body {
   
 .item8 { animation-delay: calc(40s / 9 * (9 - 8) * -1); } 
 
-/* .item9 { animation-delay: calc(40s / 9 * (9 - 9) * -1); } */ 
+.item9 { animation-delay: calc(40s / 9 * (9 - 9) * -1); }
 
 
 
@@ -475,6 +476,8 @@ body {
 .imagen_web_7:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web8.jpg');  object-fit: contain; }
 
 .imagen_web_9:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web10.jpg');  object-fit: contain; }
+
+.imagen_web_11:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web12.png');  object-fit: contain; }
 
 
 /* ////////////////////////////////////////////////////////////////////// TECNOLOGÍAS - PAG3 //////////////////////////////// */
