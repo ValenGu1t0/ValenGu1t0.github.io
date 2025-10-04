@@ -465,19 +465,19 @@ body {
     transition: transform 0.5s ease;
 }
 
-.imagen_web_1:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web2.jpg');  object-fit: contain;  }
+.imagen_web_1:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; object-fit: contain;  }
 
 .imagen_web_2:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web4.jpg');  object-fit: contain; }
-
-.imagen_web_3:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; object-fit: contain; }
-
-.imagen_web_5:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; object-fit: contain; }
 
 .imagen_web_7:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web8.jpg');  object-fit: contain; }
 
 .imagen_web_9:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web10.jpg');  object-fit: contain; }
 
 .imagen_web_11:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web12.png');  object-fit: contain; }
+
+.imagen_web_13:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web14.png');  object-fit: contain; }
+
+
 
 
 /* ////////////////////////////////////////////////////////////////////// TECNOLOGÍAS - PAG3 //////////////////////////////// */
