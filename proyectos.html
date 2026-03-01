@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyectos de desarrollo web de Valentino Privitera, incluyendo aplicaciones web con Next.js, React, Node.js y Spring Boot.">
     <link rel="icon" href="img/icon1.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <title>Valentino Privitera - Proyectos</title>
+    <title>Proyectos | Valentino Privitera</title>
 </head>
 
 
@@ -17,20 +18,23 @@
 
         <!-- /////////////////////////////////////// NAV /////////////////////////////////////// -->
         <nav class="nav_body">
-            <ul class="nav_caja_botones">
-                <a class="boton_nav" href="index.html"><li>Inicio</li></a>     
-                <a class="boton_nav" href="proyectos.html"><li>Proyectos</li></a>
-                <a class="boton_nav" href="tecnologias.html"><li>Tecnologías</li></a>
-                <a class="boton_nav" href="https://github.com/ValenGu1t0" target="_blank" id="github"><li>GitHub</li></a>
-                <i class="fa-solid fa-circle-half-stroke boton_nav" id="themeToggle"></i>
-            </ul>
+            <div class="nav_caja_botones">
+                <a class="boton_nav" href="index.html" data-i18n="nav_inicio">Inicio</a>     
+                <a class="boton_nav" href="proyectos.html" data-i18n="nav_proyectos">Proyectos</a>
+                <a class="boton_nav" href="tecnologias.html" data-i18n="nav_tecnologias">Tecnologías</a>
+                <a class="boton_nav" href="https://github.com/ValenGu1t0" target="_blank" id="github">GitHub</a>
+                <div id="langToggle" class="boton_nav" title="Cambiar idioma">
+                    <i class="fa-solid fa-globe"></i> <span id="langText">ES</span>
+                </div>
+                <i class="fa-solid fa-circle-half-stroke boton_nav" id="themeToggle" title="Cambiar tema"></i>
+            </div>
         </nav>
 
 
         <!-- /////////////////////////////////////// INTRODUCCION /////////////////////////////////////// -->
         <section class="inicio_body">
-            <h1>Proyectos Web</h1>
-            <p>En esta sección podes ver mis páginas web. Me dedico plenamente al Front-End, podes revisar que tecnologías utilice en la sección de <a href="tecnologias.html" class="link_en_p ">tecnologías</a>.</p>
+            <h1 data-i18n="pro_h1">Proyectos Web</h1>
+            <p data-i18n="pro_p_intro">En esta sección podes ver mis páginas web. Me dedico plenamente al Front-End, podes revisar que tecnologías utilice en la sección de <a href="tecnologias.html" class="link_en_p ">tecnologías</a>.</p>
         </section>
 
 
@@ -40,8 +44,8 @@
             <!-- Sistema de Gestión IMA -->
             <div class="proyectos_card">
                 <div class="proyectos_card_info">
-                    <h3>Sistema Web Multitenant - TAUP Agency</h3>
-                    <p>
+                    <h3 data-i18n="pro_p_taup_title">Sistema Web Multitenant - TAUP Agency</h3>
+                    <p data-i18n="pro_p_taup">
                         Trabajé como principal diseñador y desarrollador de la UI/UX de este sistema de gestión de empresas multitenant (multiempresa). 
                         El mismo fue desarollado con <strong>Next.js</strong> y <strong>TypeScript</strong>, utilizando la librería de <strong>Shadcn/ui</strong> 
                         en conjunto con tailwind.css y usé herramientas como <strong>Zustand</strong> para la gestión de estado global, 
@@ -49,7 +53,7 @@
                         pero poseo una demo <a href="https://management-system-next.vercel.app/" target="_blank" class="link_en_p ">acá</a>. 
                         Ingresá con "admin" y "admin123"! 
                     </p>
-                    <h4>Tecnologías:</h4>
+                    <h4 data-i18n="pro_techs">Tecnologías:</h4>
                     <div class="proyectos_card_tecnologias">
                         <img class="proyectos_card_tecnologias_iconos botoncontacto" src="img/iconos/typescript.svg" alt="Typescript">
                         <img class="proyectos_card_tecnologias_iconos botoncontacto" src="img/iconos/Next.png" alt="Next">
@@ -60,20 +64,20 @@
                 <a href="https://management-system-next.vercel.app/" target="_blank" class="link_en_p "><img src="img/proyectos/web1.jpg" alt="IMA Consultoría" class="img_proyectos imagen_web_1"></a>
             </div>
 
-            <h2 class="pruebas_tecnicas">Trabajo como Freelance</h2>
+            <h2 class="pruebas_tecnicas" data-i18n="pro_h2_freelance">Trabajo como Freelance</h2>
 
             <!-- Landing Page - Thiago -->
             <div class="proyectos_card">
                 <div class="proyectos_card_info">
-                    <h3>App Web para estudio de Tatuajes - Next.js + Spring Boot + PostgreSQL</h3>
-                    <p>
+                    <h3 data-i18n="pro_h3_tattoo">App Web para estudio de Tatuajes - Next.js + Spring Boot + PostgreSQL</h3>
+                    <p data-i18n="pro_p_tattoo">
                         Proyecto Freelance, desarrollado con <strong>Next.js</strong>, <strong>TypeScript</strong> y la librería de componentes 
                         <strong>Shadcn/ui</strong> en el front y <strong>Spring Boot</strong>, <strong>JWT</strong> y <strong>Supabase (PostgreSQL)</strong> 
                         para el back. El proyecto fue encargado por un tatuador independiente de Rosario que necesitaba un sistema para gestionar 
                         los turnos de su estudio y además permitir que sus clientes puedan sacar turno en el momento que quisieran y cuando ellos decidan. 
                         Podes darle un vistazo en el siguiente <a href="https://instaguera.vercel.app/" target="_blank" class="link_en_p ">enlace</a>.
                     </p>
-                    <h4>Tecnologías:</h4>
+                    <h4 data-i18n="pro_techs">Tecnologías:</h4>
                     <div class="proyectos_card_tecnologias">
                         <img class="proyectos_card_tecnologias_iconos botoncontacto" src="img/iconos/Next.png" alt="next.js">
                         <img class="proyectos_card_tecnologias_iconos botoncontacto" src="img/iconos/typescript.svg" alt="typescript">
@@ -89,10 +93,10 @@
             <!-- Landing Page - Consec -->
             <div class="proyectos_card">
                 <div class="proyectos_card_info">
-                    <h3>Landing Page para empresa de construcción - JavaScript y Tailwind</h3>
-                    <p>Proyecto Freelance, desarrollado con JavaScript puro y TailwindCSS. Una constructora de mi ciudad me encargó rehacer su landing page para su empresa de construcción, asi que decidí mantenerla simple y atractiva, respetando leyes básicas del UI, y manteniendo un buen SEO a través de buenas prácticas como HTML semántico y aplicar conceptos como "lazy loading" para imágenes. Podes ver el resultado final <a href="https://www.consec.ar" target="_blank" class="link_en_p ">acá</a>.</p>
+                    <h3 data-i18n="pro_h3_consec">Landing Page para empresa de construcción - JavaScript y Tailwind</h3>
+                    <p data-i18n="pro_p_consec">Proyecto Freelance, desarrollado con JavaScript puro y TailwindCSS. Una constructora de mi ciudad me encargó rehacer su landing page para su empresa de construcción, asi que decidí mantenerla simple y atractiva, respetando leyes básicas del UI, y manteniendo un buen SEO a través de buenas prácticas como HTML semántico y aplicar conceptos como "lazy loading" para imágenes. Podes ver el resultado final <a href="https://www.consec.ar" target="_blank" class="link_en_p ">acá</a>.</p>
                 
-                    <h4>Tecnologías:</h4>
+                    <h4 data-i18n="pro_techs">Tecnologías:</h4>
                     <div class="proyectos_card_tecnologias">
                         <img class="proyectos_card_tecnologias_iconos botoncontacto" src="img/iconos/js.png" alt="js">
                         <img class="proyectos_card_tecnologias_iconos botoncontacto" src="img/iconos/tail.png" alt="tail">
@@ -102,14 +106,14 @@
                 <a href="https://consec.ar" target="_blank"><img src="img/proyectos/web3.jpg" alt="Landing Page Freelance" class="img_proyectos imagen_web_2"></a>
             </div>
 
-            <h2 class="pruebas_tecnicas">Pruebas Técnicas</h2>
+            <h2 class="pruebas_tecnicas" data-i18n="pro_h2_pruebas">Pruebas Técnicas</h2>
 
             <!-- Tablero KanBan con Web Sockets -->
             <div class="proyectos_card">
                 <div class="proyectos_card_info">
-                    <h3>Tablero KanBan con Web Sockets - Next.js, Nest.js y MongoDB + N8N</h3>
-                    <p>Proyecto Full-Stack realizado con <strong>Next.js</strong>, <strong>Nest.js</strong> y <strong>MongoDB</strong> para una prueba técnica Full-Stack. Se solicitó recrear un tablero KanBan con columnas personalizables, notas editables y movibles con drag & drop fluido y web sockets para (usé <strong>Socket.io</strong>) para edición en tiempo real. Además, use <strong>N8N</strong> para automatizar la descarga y envío a un mail de elección los datos actuales del tablero; los mismos se envían en formato CSV. Es de acceso público, asi que podés organizar tu día y luego exportarlo <a href="https://mykanban-ten.vercel.app/" target="_blank" class="link_en_p ">acá</a>.</p>  
-                    <h4>Tecnologías:</h4>
+                    <h3 data-i18n="pro_h3_kanban">Tablero KanBan con Web Sockets - Next.js, Nest.js y MongoDB + N8N</h3>
+                    <p data-i18n="pro_p_kanban">Proyecto Full-Stack realizado con <strong>Next.js</strong>, <strong>Nest.js</strong> y <strong>MongoDB</strong> para una prueba técnica Full-Stack. Se solicitó recrear un tablero KanBan con columnas personalizables, notas editables y movibles con drag & drop fluido y web sockets para (usé <strong>Socket.io</strong>) para edición en tiempo real. Además, use <strong>N8N</strong> para automatizar la descarga y envío a un mail de elección los datos actuales del tablero; los mismos se envían en formato CSV. Es de acceso público, asi que podés organizar tu día y luego exportarlo <a href="https://mykanban-ten.vercel.app/" target="_blank" class="link_en_p ">acá</a>.</p>  
+                    <h4 data-i18n="pro_techs">Tecnologías:</h4>
                     <div class="proyectos_card_tecnologias">
                         <img class="proyectos_card_tecnologias_iconos botoncontacto" src="img/iconos/Next.png" alt="Next.js">
                         <img class="proyectos_card_tecnologias_iconos botoncontacto" src="img/iconos/nest.png" alt="Nest.js">
@@ -124,13 +128,13 @@
             <!-- Food Truck Finder -->
             <div class="proyectos_card">
                 <div class="proyectos_card_info">
-                    <h3>Food-Truck Finder - Next.js, API Routes y Leaflet</h3>
-                    <p>Proyecto Full-Stack realizado con Next.js para una prueba técnica. La idea principal es que un usario 
+                    <h3 data-i18n="pro_h3_foodtruck">Food-Truck Finder - Next.js, API Routes y Leaflet</h3>
+                    <p data-i18n="pro_p_foodtruck">Proyecto Full-Stack realizado con Next.js para una prueba técnica. La idea principal es que un usario 
                         (localizado en San Francisco, US) pueda encontrar Food-Trucks en base a ciertos parámetros de búsqueda como distancia 
                         o tipo de comida. Desarrollé un pequeño Back-End gracias al <strong>API Routes</strong> de Next.js y usé Tailwind para estilizar. 
                         Además, use la librería de código abierto <strong>leaflet</strong> para el mapa. 
                         Podes revisarlo <a href="https://food-truck-finder-red.vercel.app/" target="_blank" class="link_en_p ">acá</a>.</p>  
-                    <h4>Tecnologías:</h4>
+                    <h4 data-i18n="pro_techs">Tecnologías:</h4>
                     <div class="proyectos_card_tecnologias">
                         <img class="proyectos_card_tecnologias_iconos botoncontacto" src="img/iconos/Next.png" alt="Next">
                         <img class="proyectos_card_tecnologias_iconos botoncontacto" src="img/iconos/tail.png" alt="Tailwind">
@@ -151,16 +155,17 @@
     <footer class="centro_body">
 
         <div class="footer">
-            <ul class="footer_caja_botones">
-                <a class="boton_footer" href="index.html"><li>Inicio</li></a>              
-                <a class="boton_footer" href="#inicio"><li>Proyectos</li></a>
-                <a class="boton_footer" href="tecnologias.html"><li>Tecnologías</li></a>
-            </ul>
-            <p>© 2025 Valentino Privitera. No tengo copyright pero queda piola.</p>
+            <div class="footer_caja_botones">
+                <a class="boton_footer" href="index.html" data-i18n="nav_inicio">Inicio</a>              
+                <a class="boton_footer" href="#inicio" data-i18n="nav_proyectos">Proyectos</a>
+                <a class="boton_footer" href="tecnologias.html" data-i18n="nav_tecnologias">Tecnologías</a>
+            </div>
+            <p data-i18n="footer_copy">© 2025 Valentino Privitera. No tengo copyright pero queda piola.</p>
         </div>
 
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

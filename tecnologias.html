@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stack tecnológico y herramientas utilizadas por Valentino Privitera en el desarrollo web Frontend y Backend.">
     <link rel="icon" href="img/icon1.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <title>Valentino Privitera - Tecnologías</title>
+    <title>Tecnologías | Valentino Privitera</title>
 </head>
 
 
@@ -18,20 +19,23 @@
         <!-- /////////////////////////////////////// NAV /////////////////////////////////////// -->
         <nav class="nav_body">
 
-            <ul class="nav_caja_botones">
-                <a class="boton_nav" href="index.html"><li>Inicio</li></a>     
-                <a class="boton_nav" href="proyectos.html"><li>Proyectos</li></a>
-                <a class="boton_nav" href="tecnologias.html"><li>Tecnologías</li></a>
-                <a class="boton_nav" href="https://github.com/ValenGu1t0" target="_blank" id="github"><li>GitHub</li></a>
-                <i class="fa-solid fa-circle-half-stroke boton_nav" id="themeToggle"></i>
-            </ul>
+            <div class="nav_caja_botones">
+                <a class="boton_nav" href="index.html" data-i18n="nav_inicio">Inicio</a>     
+                <a class="boton_nav" href="proyectos.html" data-i18n="nav_proyectos">Proyectos</a>
+                <a class="boton_nav" href="tecnologias.html" data-i18n="nav_tecnologias">Tecnologías</a>
+                <a class="boton_nav" href="https://github.com/ValenGu1t0" target="_blank" id="github">GitHub</a>
+                <div id="langToggle" class="boton_nav" title="Cambiar idioma">
+                    <i class="fa-solid fa-globe"></i> <span id="langText">ES</span>
+                </div>
+                <i class="fa-solid fa-circle-half-stroke boton_nav" id="themeToggle" title="Cambiar tema"></i>
+            </div>
 
         </nav>
 
         <!-- /////////////////////////////////////// INTRO /////////////////////////////////////// -->
         <section class="inicio_body">
-            <h1>Tecnologías</h1>
-            <p>En esta sección detallo que lenguajes, librerías y frameworks componen mi stack tecnológico, aplicado a mis <a class="link_en_p" href="proyectos.html">Páginas Web</a>. Mis puntos fuertes son el diseño Front-End responsivo de páginas y aplicaciones web, trabajar con APIs RESTful y una fuerte inclinación por el detalle y el diseño.</p>
+            <h1 data-i18n="tec_h1">Tecnologías</h1>
+            <p data-i18n="tec_p_intro">En esta sección detallo que lenguajes, librerías y frameworks componen mi stack tecnológico, aplicado a mis <a class="link_en_p" href="proyectos.html">Páginas Web</a>. Mis puntos fuertes son el diseño Front-End responsivo de páginas y aplicaciones web, trabajar con APIs RESTful y una fuerte inclinación por el detalle y el diseño.</p>
         </section>
 
 
@@ -40,7 +44,7 @@
 
             <div class="tecnologias_card">
                 <div class="tecnologias_card_titulo"><img src="img/iconos/html.png" alt="html" loading="lazy"><h2>HTML 5</h2></div>
-                <p>
+                <p data-i18n="tec_p_html">
                     Estructuración semántica de páginas web accesibles y optimizadas para SEO. Implementación de formularios interactivos, 
                     multimedia (audio, video), canvas y elementos modernos como details y dialog. Experiencia superior a 3 años.
                 </p>
@@ -48,7 +52,7 @@
 
             <div class="tecnologias_card">
                 <div class="tecnologias_card_titulo"><img src="img/iconos/css.png" alt="css" loading="lazy"><h2>CSS 3</h2></div>
-                <p>
+                <p data-i18n="tec_p_css">
                     Diseño web responsivo con Flexbox y Grid, transiciones y animaciones avanzadas con @keyframes y transform. 
                     Aplicación de variables CSS, clamp() y calc() para mejorar la adaptabilidad y experiencia de usuario. 
                     Diseño responsivo en todas mis aplicaciones, para mayor adaptabilidad tanto en desktop como en mobile. 
@@ -58,7 +62,7 @@
 
             <div class="tecnologias_card">
                 <div class="tecnologias_card_titulo"><img src="img/iconos/tail.png" alt="tailwind" loading="lazy"><h2>Tailwind CSS</h2></div>
-                <p>
+                <p data-i18n="tec_p_tail">
                     Uso de Tailwind CSS para desarrollar interfaces modernas y eficientes con clases utilitarias. Implementación de diseños responsivos, 
                     personalización con extend en tailwind.config.js y optimización con purge para mejorar el rendimiento. Experiencia superior a 3 años.
                 </p>
@@ -66,7 +70,7 @@
 
             <div class="tecnologias_card">
                 <div class="tecnologias_card_titulo"><img src="img/iconos/github.png" alt="github" loading="lazy"><h2>Git / GitHub</h2></div>
-                <p>
+                <p data-i18n="tec_p_git">
                     Gestión de versiones con Git y GitHub, incluyendo branches, pull requests y revisión de código colaborativo. 
                     Configuración de GitHub Pages para despliegues y automatización con GitHub Actions. Experiencia superior a 3 años.
                 </p>
@@ -74,7 +78,7 @@
 
             <div class="tecnologias_card">
                 <div class="tecnologias_card_titulo"><img src="img/iconos/node.png" alt="node" loading="lazy"><h2>Node.js</h2></div>
-                <p>
+                <p data-i18n="tec_p_node">
                     Desarrollo aplicaciones backend con Node.js utilizando Express.js para la creación de APIs RESTful eficientes. 
                     Manejo autenticación con JWT, interacción con bases de datos relacionales y no relacionales (MySQL, PostgreSQL y MongoDB) 
                     mediante ORM/ODM como Sequelize o Mongoose, y despliegue en servidores como Vercel. Experiencia superior a 2 años.
@@ -83,7 +87,7 @@
             
             <div class="tecnologias_card">
                 <div class="tecnologias_card_titulo"><img src="img/iconos/typescript.svg" alt="javascript" loading="lazy"><h2>TypeScript - JavaScript</h2></div>
-                <p>
+                <p data-i18n="tec_p_ts">
                     Dominio de ES6+ con arrow functions, destructuring, template literals y módulos. Manejo asincronismo con fetch API, 
                     async/await y Promises. Experiencia en manipulación del DOM, eventos, localStorage y estructuras de datos avanzadas 
                     como objetos y arrays. Además, desarrollo aplicaciones web robustas con el agregado del tipado de TypeScript.
@@ -93,7 +97,7 @@
 
             <div class="tecnologias_card">
                 <div class="tecnologias_card_titulo"><img src="img/iconos/mui.png" alt="material UI" loading="lazy"><h2>Material UI</h2></div>
-                <p>
+                <p data-i18n="tec_p_mui">
                     Creación de interfaces profesionales con Material UI, utilizando su sistema de temas y personalización con sx y 
                     styled components. Manejo de componentes avanzados como modales, tablas dinámicas y Grid System.
                 </p>
@@ -101,7 +105,7 @@
 
             <div class="tecnologias_card">
                 <div class="tecnologias_card_titulo"><img src="img/iconos/shadcn.png" alt="shadcn/ui" loading="lazy"><h2>Shadcn/ui</h2></div>
-                <p>
+                <p data-i18n="tec_p_shadcn">
                     Utilizo la mejor y mas flexible librería de componentes del ecosistema del front moderno y desarrollo UIs modernas 
                     y accesibles con esta maravilla. Experiencia cercana a 2 años.
                 </p>
@@ -109,7 +113,7 @@
 
             <div class="tecnologias_card">
                 <div class="tecnologias_card_titulo"><img src="img/iconos/react.png" alt="react" loading="lazy"><h2>React.js</h2></div>
-                <p>
+                <p data-i18n="tec_p_react">
                     Desarrollo aplicaciones y páginas web dinámicas con React utilizando componentes reutilizables, 
                     hooks (useState, useEffect, useRef, useMemo, useCallback), administro el contexto global con Context API, 
                     Redux o Zustand, especializandome en este último. Implemento enrutamiento con React Router y optimizo el 
@@ -120,7 +124,7 @@
 
             <div class="tecnologias_card">
                 <div class="tecnologias_card_titulo"><img src="img/iconos/Next.png" alt="next.js" loading="lazy"><h2>Next.js</h2></div>
-                <p>
+                <p data-i18n="tec_p_next">
                     Trabajo principalmente con Next.js para crear aplicaciones optimizadas, utilizando renderizado estático (SSG) 
                     y dinámico (SSR) para mejorar el SEO y rendimiento de mis páginas. Utilizo API Routes, Server Actions y Middlewares
                     para backend. Integro autenticación con NextAuth, JWT o librerías como Clerk, y modelizo mis proyectos con Tailwind CSS y Shadcn/ui. 
@@ -136,15 +140,16 @@
     <!-- /////////////////////////////////////// FOOTER /////////////////////////////////////// -->
     <footer class="centro_body">
         <div class="footer">
-            <ul class="footer_caja_botones">
-                <a class="boton_footer" href="index.html"><li>Inicio</li></a>              
-                <a class="boton_footer" href="proyectos.html"><li>Proyectos</li></a>
-                <a class="boton_footer" href="#inicio"><li>Tecnologías</li></a>
-            </ul>
-            <p>© 2025 Valentino Privitera. No tengo copyright pero queda piola.</p>
+            <div class="footer_caja_botones">
+                <a class="boton_footer" href="index.html" data-i18n="nav_inicio">Inicio</a>              
+                <a class="boton_footer" href="proyectos.html" data-i18n="nav_proyectos">Proyectos</a>
+                <a class="boton_footer" href="#inicio" data-i18n="nav_tecnologias">Tecnologías</a>
+            </div>
+            <p data-i18n="footer_copy">© 2025 Valentino Privitera. No tengo copyright pero queda piola.</p>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

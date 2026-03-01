@@ -30,7 +30,7 @@
 
 .link_en_p {  text-decoration: none;  color: var(--letras_link); }
 
-.pruebas_tecnicas { color: white; }
+.pruebas_tecnicas { color: var(--white); }
 
 /* ////////////////////////////////////////////////////////////////////// BODY /////////////////////////////////// */
 
@@ -74,10 +74,10 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
 
-    width: 35%;
-    padding: 10px 1.4rem;
+    width: fit-content;
+    padding: 10px 1.8rem;
 
     background-color: var(--moregray);
     border-radius: 30px;
@@ -96,7 +96,6 @@ body {
 .boton_nav:hover {  color: var(--letras_link); transition: ease-in-out; transition-duration: 0.2s;  }
 
 #themeToggle {
-
     margin-left: 0.5rem;
     font-size: medium;
     color: var(--white);
@@ -104,6 +103,23 @@ body {
 }
 
 #themeToggle:hover {  color: var(--letras_link); transition: ease-in-out; transition-duration: 0.2s;  }
+
+#langToggle {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    font-size: medium;
+    color: var(--white);
+    transition: ease-in-out 0.2s;
+}
+
+#langToggle:hover { color: var(--letras_link); }
+
+#langToggle span {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
 
 
 
@@ -539,7 +555,7 @@ body {
 
     /* NAV */
     .nav_caja_botones { width: 100%; }
-    .boton_nav li { font-size: 90%; }
+    .boton_nav { font-size: 90%; }
 
 
     /* INICIO */
@@ -558,7 +574,7 @@ body {
     /* FOOTER */
     .footer { width: 90%; flex-direction: column;  justify-content: center;  align-items: center; }
     .footer_caja_botones { width: 100%; font-size: 1rem; margin-right: 5px; justify-content: center; align-items: center; }
-    .boton_footer li { font-size: 80%; margin: 5px; }
+    .boton_footer { font-size: 80%; margin: 5px; }
 
 
     /* PROYECTOS */
@@ -581,7 +597,7 @@ body {
 
     /* NAV */
     .nav_caja_botones { width: 110%; height: auto; }
-    .boton_nav li { font-size: 80%; font-weight: 600; }
+    .boton_nav { font-size: 80%; font-weight: 600; }
     #github { display: none; }
 
 
@@ -605,7 +621,7 @@ body {
     /* FOOTER */
     .footer { width: 130%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
     .footer_caja_botones {  width: 100%;  padding: 0; justify-content: center; align-items: center; }
-    .boton_footer li { font-size: 100%; margin: 5px; font-weight: 700; }
+    .boton_footer { font-size: 100%; margin: 5px; font-weight: 700; }
     .footer p { text-align: center; }
 
 
@@ -628,7 +644,7 @@ body {
 
     /* NAV */
     .nav_caja_botones { width: 100%; height: auto; }
-    .boton_nav li { font-size: 80%; font-weight: 600; }
+    .boton_nav { font-size: 80%; font-weight: 600; }
     #github { display: none; }
 
     /* INTRO */
@@ -652,7 +668,7 @@ body {
     /* FOOTER */
     .footer { width: 130%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
     .footer_caja_botones {  width: 100%;  padding: 0; justify-content: center; align-items: center; }
-    .boton_footer li { font-size: 100%; margin: 5px; font-weight: 700; }
+    .boton_footer { font-size: 100%; margin: 5px; font-weight: 700; }
     .footer p { text-align: center; }
 
 
@@ -675,7 +691,7 @@ body {
 
     /* NAV */
     .nav_caja_botones { width: 100%; height: auto; }
-    .boton_nav li { font-size: 80%; font-weight: 600; }
+    .boton_nav { font-size: 80%; font-weight: 600; }
     #github { display: none; }
 
     /* INTRO */
@@ -697,7 +713,7 @@ body {
     /* FOOTER */
     .footer { width: 130%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
     .footer_caja_botones {  width: 100%;  padding: 0; justify-content: center; align-items: center; }
-    .boton_footer li { font-size: 100%; margin: 5px; font-weight: 700; }
+    .boton_footer { font-size: 100%; margin: 5px; font-weight: 700; }
     .footer p { text-align: center; }
 
 
@@ -722,7 +738,7 @@ body {
     /* NAV */
     .nav_body { width: 130%; }
     .nav_caja_botones { width: 110%; margin: 0.5rem; }
-    .boton_nav li  { font-size: 80%; font-weight: 600; }
+    .boton_nav { font-size: 80%; font-weight: 600; }
     #github { display: none; }
 
 
@@ -747,7 +763,7 @@ body {
     /* FOOTER */
     .footer { width: 130%; flex-direction: column;  justify-content: flex-start;  align-items:center; }
     .footer_caja_botones { width: 100%; padding: 0; justify-content: center; align-items: center; }
-    .boton_footer li { font-size: 100%; margin: 5px; font-weight: 700;}
+    .boton_footer { font-size: 100%; margin: 5px; font-weight: 700;}
     .footer p { text-align: center; }
 
 
