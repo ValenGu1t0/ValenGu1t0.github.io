@@ -23,6 +23,18 @@ const setLanguage = (language) => {
         }
     });
 
+    // Actualizamos el link del CV en base al idioma seleccionado
+    const cvLink = document.querySelector('.botonCV');
+    if (cvLink) {
+        if (language === 'en') {
+            cvLink.setAttribute('href', 'assets/Resume - Valentino Privitera.pdf');
+            cvLink.setAttribute('download', 'Resume - Valentino Privitera.pdf');
+        } else {
+            cvLink.setAttribute('href', 'assets/Currículum - Valentino Privitera.pdf');
+            cvLink.setAttribute('download', 'Currículum - Valentino Privitera.pdf');
+        }
+    }
+
     const langText = document.getElementById("langText");
     if (langText) {
         langText.innerText = language === "en" ? "EN" : "ES";

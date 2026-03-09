@@ -8,7 +8,7 @@ const translations = {
 
         // Index.html
         idx_h1: "Analista de Sistemas y Desarrollador Full-Stack.",
-        idx_p_intro: "Soy Valentino Privitera! Estudiante avanzado de Analista Universitario en Sistemas en la UNR, Rosario. Además, soy desarrrollador Full-Stack enfocado en el Front-End. Bienvenido a mi página web.",
+        idx_p_intro: "Soy Valentino Privitera! Estudiante avanzado de Analista Universitario en Sistemas en la UNR, Rosario. Además, soy desarrrollador Full-Stack especializado en Next.js (SSR, Server Actions) y React. Bienvenido a mi página web.",
         idx_h3_react: "React.js y Next.js",
         idx_p_react: "En los últimos 3 años adquirí un montón de experiencia en el ecosistema de JavaScript trabajando con <strong>React</strong> y <strong>Next.js</strong>, enfocándome en la creación de interfaces dinámicas, optimizadas con <em>hooks</em>, buena gestión de estado y enrutamiento. En Next.js también trabajé con <em>SSR</em>, <em>SSG</em> y la integración con APIs, lo que me permitió desarrollar diversas aplicaciones web completas, actuales y escalables.",
         idx_h3_node: "Node.js y Spring",
@@ -80,7 +80,7 @@ const translations = {
 
         // Index.html
         idx_h1: "Systems Analyst and Full-Stack Developer.",
-        idx_p_intro: "I'm Valentino Privitera! Advanced Systems University Analyst student at UNR, Rosario. Also, I am a Full-Stack developer focused on Front-End. Welcome to my website.",
+        idx_p_intro: "I'm Valentino Privitera! Advanced Systems University Analyst student at UNR, Rosario. Also, I am a Full-Stack developer specialized in Next.js (SSR, Server Actions) and React. Welcome to my website.",
         idx_h3_react: "React.js & Next.js",
         idx_p_react: "In the last 3 years I gained a lot of experience in the JavaScript ecosystem working with <strong>React</strong> and <strong>Next.js</strong>, focusing on the creation of dynamic interfaces, optimized with <em>hooks</em>, good state management and routing. In Next.js I also worked with <em>SSR</em>, <em>SSG</em> and API integration, which allowed me to develop several complete, modern and scalable web applications.",
         idx_h3_node: "Node.js & Spring",

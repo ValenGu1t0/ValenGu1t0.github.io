@@ -169,66 +169,40 @@ body {
 /* ////////////////////////////////////////////////////////////////////// SECCION 2.1 - CARDS IZQUIERDA ////////////////// */
 .cards_body_izq {
 
-    padding: 1rem 1rem 1rem 2.5rem;
+    padding: 1rem 3rem 1rem 0; /* Espaciado a la derecha para separarlo */
     width: 50%;
 
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
     position: relative;
 }
 
 /* ////////// TIMELINE EXPERIENCIA ////////// */
-.timeline_line {
-    position: absolute;
-    left: 1.2rem;
-    top: 2rem;
-    bottom: 2rem;
-    width: 2px;
-    background-color: var(--moregray);
-    z-index: 1;
-}
-
 .timeline_card {
     position: relative;
     z-index: 2;
 }
 
-.timeline_card h3 {
+div.timeline_card h3 {
     margin-top: 5px;
+    margin-bottom: 10px; /* Aumento del margen entre título y fecha */
     color: var(--white);
-}
-
-.timeline_dot {
-    position: absolute;
-    left: -2.7rem;
-    top: 1.5rem;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: var(--letras_link);
-    border: 3px solid var(--gray);
-    box-sizing: content-box;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.timeline_card:hover .timeline_dot {
-    transform: scale(1.3);
-    background-color: var(--white);
 }
 
 .timeline_date {
     font-size: 0.8rem;
     color: var(--letras_link);
     font-weight: 600;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 
 .card_info { 
 
     border-radius: 20px;
-    padding: 5px 2rem 1rem;
+    padding: 2rem 2rem;
 
     color: var(--white);
 }
@@ -525,26 +499,26 @@ body {
 
 .imagen_web_1:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; object-fit: contain;  }
 
-.imagen_web_2:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web4.jpg');  object-fit: contain; }
+.imagen_web_2:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('assets/proyectos/web4.jpg');  object-fit: contain; }
 
-.imagen_web_7:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web8.jpg');  object-fit: contain; }
+.imagen_web_7:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('assets/proyectos/web8.jpg');  object-fit: contain; }
 
-.imagen_web_9:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web10.jpg');  object-fit: contain; }
+.imagen_web_9:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('assets/proyectos/web10.jpg');  object-fit: contain; }
 
-.imagen_web_11:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web12.png');  object-fit: contain; }
+.imagen_web_11:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('assets/proyectos/web12.png');  object-fit: contain; }
 
-.imagen_web_13:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web14.png');  object-fit: contain; }
+.imagen_web_13:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('assets/proyectos/web14.png');  object-fit: contain; }
 
-.imagen_web_15:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('img/proyectos/web5.png');  object-fit: contain; }
+.imagen_web_15:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; content: url('assets/proyectos/web5.png');  object-fit: contain; }
 
 
 
 /* ////////////////////////////////////////////////////////////////////// TECNOLOGÍAS - PAG3 //////////////////////////////// */
 .tecnologias { 
     
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     box-sizing: border-box;
 
     width: 100%;
@@ -553,9 +527,9 @@ body {
 
 .tecnologias_card {
 
-    width: 70%;
+    width: 100%;
     height: auto;
-    margin-bottom: 2rem;
+    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
@@ -626,7 +600,7 @@ body {
 
     /* TECNOLOGIAS */
     .tecnologias {  align-items: center;  }
-    .tecnologias_card { width: 70%; max-width: 600px; }
+    .tecnologias_card { max-width: 600px; justify-self: center; }
 }
 
 /* ///////////////////// TABLET  ///////////////////// */
@@ -655,8 +629,6 @@ body {
     .cards_body { flex-direction: column; width: 100%; align-items: center; padding: 0; }
     .cards_body_izq { width: 100%; padding: 0 0 0 1.5rem; }
     .cards_body_der { width: 100%; padding: 0; }
-    .timeline_line { left: 0.2rem; }
-    .timeline_dot { left: -1.7rem; }
     .card_info_der { margin-top: 1rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
@@ -676,7 +648,7 @@ body {
 
 
     /* TECNOLOGIAS */
-    .tecnologias {  width: 100%; align-items: center; } 
+    .tecnologias {  width: 100%; grid-template-columns: 1fr; justify-items: center; } 
     .tecnologias_card { width: 80%; }
 }
 
@@ -705,8 +677,6 @@ body {
     .cards_body { flex-direction: column; width: 100%; align-items: center; padding: 0; }
     .cards_body_izq { width: 100%; padding: 0 0 0 1.5rem; }
     .cards_body_der { width: 100%; padding: 0; }
-    .timeline_line { left: 0.2rem; }
-    .timeline_dot { left: -1.7rem; }
     .card_info_der { margin-top: 1rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
@@ -726,7 +696,7 @@ body {
     
 
     /* TECNOLOGIAS */
-    .tecnologias {  width: 100%; align-items: center; } 
+    .tecnologias {  width: 100%; grid-template-columns: 1fr; justify-items: center; } 
     .tecnologias_card { width: 80%; }
 }
 
@@ -755,10 +725,8 @@ body {
 
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 110%; align-items: center; padding: 0; }
-    .cards_body_izq { width: 110%; padding: 0 0 0 1.5rem; }
+    .cards_body_izq { width: 110%; padding: 0; }
     .cards_body_der { width: 110%; padding: 0; }
-    .timeline_line { left: 0.2rem; }
-    .timeline_dot { left: -1.65rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
     .contacto_email button:hover { width: 25%; font-size: 60%; }
@@ -777,8 +745,8 @@ body {
     
 
     /* TECNOLOGIAS */
-    .tecnologias { width: 120%; align-items: center; } 
-    .tecnologias_card { width: 90%; align-items: center; }
+    .tecnologias { width: 120%; grid-template-columns: 1fr; justify-items: center; } 
+    .tecnologias_card { width: 90%; align-items: center; text-align: center; }
 }
 
 /* ///////////////////// CELULAR CHICO ///////////////////// */
@@ -811,10 +779,8 @@ body {
 
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 130%; align-items: center; padding: 0; }
-    .cards_body_izq { width: 110%; padding: 0 0 0 1.5rem; }
+    .cards_body_izq { width: 110%; padding: 0; }
     .cards_body_der { width: 110%; }
-    .timeline_line { left: 0.2rem; }
-    .timeline_dot { left: -1.6rem; }
     .contacto_email input { width: 70%; padding: 1px;}
     .contacto_email button { width: 25%; font-size: 60%; }
     .contacto_email button:hover { width: 25%; font-size: 60%; }
@@ -833,6 +799,6 @@ body {
     
 
     /* TECNOLOGIAS */
-    .tecnologias {  width: 110%; align-items: center; } 
-    .tecnologias_card { width: 95%; }
+    .tecnologias {  width: 110%; grid-template-columns: 1fr; justify-items: center; } 
+    .tecnologias_card { width: 95%; text-align: center; }
 }
