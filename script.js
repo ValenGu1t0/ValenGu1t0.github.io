@@ -38,7 +38,8 @@ const toggleLanguage = () => {
 document.addEventListener("DOMContentLoaded", () => {
 
     // Theme setup
-    if (localStorage.getItem("theme") === "light") {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
         document.body.classList.add("light-mode");
     }
 

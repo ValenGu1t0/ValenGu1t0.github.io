@@ -4,7 +4,7 @@ const translations = {
         nav_inicio: "Inicio",
         nav_proyectos: "Proyectos",
         nav_tecnologias: "Tecnologías",
-        footer_copy: "© 2025 Valentino Privitera. No tengo copyright pero queda piola.",
+        footer_copy: "© 2026 Valentino Privitera. No tengo copyright pero queda piola.",
 
         // Index.html
         idx_h1: "Analista de Sistemas y Desarrollador Full-Stack.",
@@ -24,6 +24,17 @@ const translations = {
         idx_h3_cv: "Currículum Vitae",
         idx_p_cv: "O si lo preferís, podes descargar mi CV (libre de virus obvio) y echarle un vistazo a ver si mis habilidades cumplen con lo que estás buscando.",
         idx_btn_cv: "Descarga mi CV",
+
+        // Experiencia
+        exp_date_urbs: "Nov. 2025 - Marzo 2026",
+        exp_h3_urbs: "Urbs Data – Híbrido (Rosario) | Desarrollador Full-Stack",
+        exp_p_urbs: "Lideré el desarrollo de una aplicación web bajo metodologías ágiles para migrar la infraestructura completa de un cliente a un sistema web, gestionando más de 5.000 productos con 150+ campos cada uno. Desarrollé una solución full-stack con <strong>Next.js (Server Actions y Server Components)</strong>, priorizando rendimiento y escalabilidad. Implementé cálculos de costos complejos con azure functions y operaciones CRUD masivas. Además, diseñé la arquitectura de datos con <strong>PostgreSQL y Drizzle ORM</strong>. Aseguré la autenticación y seguridad mediante middleware y <strong>Clerk</strong>, integrando <strong>TanStack Query/Table</strong> y Excel.js para el manejo avanzado de datos.",
+        exp_date_taup: "Marzo 2025 - Nov. 2025",
+        exp_h3_taup: "TAUP Agencia de Innovación – Remoto | Desarrollador Front-End",
+        exp_p_taup: "Fui el principal desarrollador Front-End de la empresa. Desarrollé aplicaciones web, sistemas de gestión, de contabilidad y e-commerce. Trabajé con <strong>React.js, Next.js, TypeScript</strong>, TailwindCSS, shadcn/ui, Zustand, Zod y TanStack. Fui responsable del diseño y desarrollo Front-End de los proyectos de la empresa, implementando mejoras de SEO y rendimiento en aquellos existentes y garantizando calidad de software, experiencia de usuario e interfaces responsivas e intuitivas en los que estaba a cargo. Además, brindé soporte Back-End con <strong>Spring Boot</strong> y <strong>FastAPI</strong>, resolviendo incidencias en endpoints, lógica asociada, integraciones con APIs y optimización de performance.",
+        exp_date_free: "Julio 2024 - Feb. 2025",
+        exp_h3_free: "Freelance - Remoto | Desarrollador Web - Front-End",
+        exp_p_free: "Diseñé y desarrollé landing pages y páginas web como desarrollador freelance junior. En este periodo realicé distintas páginas y sistemas web, controlando tener un buen SEO, buena performance y seguridad, manteniendo mientras una buena UI/UX.",
 
         // Proyectos.html
         pro_h1: "Proyectos Web",
@@ -52,15 +63,20 @@ const translations = {
         tec_p_ts: "Dominio de ES6+ con arrow functions, destructuring, template literals y módulos. Manejo asincronismo con fetch API, async/await y Promises. Experiencia en manipulación del DOM, eventos, localStorage y estructuras de datos avanzadas como objetos y arrays. Además, desarrollo aplicaciones web robustas con el agregado del tipado de TypeScript. Experiencia superior a 3 años.",
         tec_p_mui: "Creación de interfaces profesionales con Material UI, utilizando su sistema de temas y personalización con sx y styled components. Manejo de componentes avanzados como modales, tablas dinámicas y Grid System.",
         tec_p_shadcn: "Utilizo la mejor y mas flexible librería de componentes del ecosistema del front moderno y desarrollo UIs modernas y accesibles con esta maravilla. Experiencia cercana a 2 años.",
-        tec_p_react: "Desarrollo aplicaciones y páginas web dinámicas con React utilizando componentes reutilizables, hooks (useState, useEffect, useRef, useMemo, useCallback), administro el contexto global con Context API, Redux o Zustand, especializandome en este último. Implemento enrutamiento con React Router y optimizo el rendimiento con técnicas como memoization y lazy loading. Además manejo librerías como TanStack Query y Tables. Experiencia superior a 2 años.",
-        tec_p_next: "Trabajo principalmente con Next.js para crear aplicaciones optimizadas, utilizando renderizado estático (SSG) y dinámico (SSR) para mejorar el SEO y rendimiento de mis páginas. Utilizo API Routes, Server Actions y Middlewares para backend. Integro autenticación con NextAuth, JWT o librerías como Clerk, y modelizo mis proyectos con Tailwind CSS y Shadcn/ui. Experiencia cercana a 3 años."
+        tec_p_react: "Desarrollo aplicaciones y páginas web dinámicas con React utilizando componentes reutilizables, hooks (useState, useEffect, useRef, useMemo, useCallback), administro el contexto global con Context API, Redux o Zustand, especializandome en este último. Implemento enrutamiento con React Router y optimizo el rendimiento con técnicas como memoization y lazy loading. Además, manejo con soltura librerías del ecosistema moderno como TanStack Query y TanStack Table para la gestión de estado asíncrono y visualización de datos masivos complejos. Experiencia superior a 2 años.",
+        tec_p_next: "Trabajo principalmente con Next.js para crear aplicaciones escalables, dominando Server Components y Server Actions junto con API Routes y Middlewares para arquitecturas full-stack avanzadas. Integro autenticación moderna con Clerk y NextAuth. Además de renderizado híbrido (SSG/SSR), poseo experiencia implementando cálculos complejos mediante Azure Functions, operaciones CRUD intensivas, y modelado de datos en bases de datos PostgreSQL con Drizzle ORM. Para utilidades avanzadas manejo integraciones como Excel.js. Experiencia cercana a 3 años.",
+        tec_p_drizzle: "Implementación de arquitectura de datos utilizando Drizzle ORM, gestionando bases de datos PostgreSQL para operaciones masivas y eficientes en entornos tipo cliente-servidor, garantizando consultas robustas 100% tipadas con TypeScript.",
+        tec_p_supabase: "Experiencia trabajando con Supabase como backend-as-a-service y base de datos PostgreSQL. Aplicando buenas prácticas como políticas de seguridad a nivel de fila (RLS), autenticación segura y aprovechamiento de su ecosistema en tiempo real.",
+        tec_p_nest: "Desarrollo de robustas aplicaciones Back-End con Nest.js bajo su arquitectura modular orientada a objetos (con inyección de dependencias) y fuertemente tipada. Poseo experiencia particular en la implementación de Web Sockets (Socket.io) para comunicación interactiva y colaborativa en tiempo real.",
+        tec_p_fastapi: "Soporte y desarrollo Back-End utilizando FastAPI en Python, enfocado en el altísimo rendimiento y la rápida construcción de APIs RESTful gracias al estándar OpenAPI integrado. Resolución de incidencias e integraciones fluidas con endpoints asíncronos.",
+        tec_p_mongo: "Modelado y gestión eficaz de bases de datos NoSQL con MongoDB. Amplio uso de la librería ODM Mongoose para la creación de modelos y esquemas estrictos de validación, administrando clústeres de datos escalables alojados en la nube con MongoDB Atlas."
     },
     en: {
         // Nav & Footer
         nav_inicio: "Home",
         nav_proyectos: "Projects",
         nav_tecnologias: "Technologies",
-        footer_copy: "© 2025 Valentino Privitera. No copyright but it looks cool.",
+        footer_copy: "© 2026 Valentino Privitera. No copyright but it looks cool.",
 
         // Index.html
         idx_h1: "Systems Analyst and Full-Stack Developer.",
@@ -80,6 +96,17 @@ const translations = {
         idx_h3_cv: "Resume",
         idx_p_cv: "Or if you prefer, you can download my CV (virus-free obviously) and take a look to see if my skills meet what you are looking for.",
         idx_btn_cv: "Download my Resume",
+
+        // Experiencia
+        exp_date_urbs: "Nov. 2025 - March 2026",
+        exp_h3_urbs: "Urbs Data – Hybrid (Rosario) | Full-Stack Developer",
+        exp_p_urbs: "I led the development of a web application under agile methodologies to migrate a client's entire infrastructure to a web system, managing more than 5,000 products with 150+ fields each. I developed a full-stack solution with <strong>Next.js (Server Actions and Server Components)</strong>, prioritizing performance and scalability. I implemented complex cost calculations with azure functions and massive CRUD operations. In addition, I designed the data architecture with <strong>PostgreSQL and Drizzle ORM</strong>. I provided authentication and security through middleware and <strong>Clerk</strong>, integrating <strong>TanStack Query/Table</strong> and Excel.js for advanced data handling.",
+        exp_date_taup: "March 2025 - Nov. 2025",
+        exp_h3_taup: "TAUP Innovation Agency – Remote | Front-End Developer",
+        exp_p_taup: "I was the main Front-End developer of the company. I developed web applications, management, accounting and e-commerce systems. I worked with <strong>React.js, Next.js, TypeScript</strong>, TailwindCSS, shadcn/ui, Zustand, Zod and TanStack. I was responsible for the Front-End design and development of the company's projects, implementing SEO and performance improvements in existing ones and ensuring software quality, user experience and responsive and intuitive interfaces in those I was in charge of. In addition, I provided Back-End support with <strong>Spring Boot</strong> and <strong>FastAPI</strong>, resolving incidents in endpoints, associated logic, API integrations and performance optimization.",
+        exp_date_free: "July 2024 - Feb. 2025",
+        exp_h3_free: "Freelance - Remote | Web Developer - Front-End",
+        exp_p_free: "I designed and developed landing pages and web pages as a junior freelance developer. In this period I made different pages and web systems, making sure to have a good SEO, good performance and security, while maintaining a good UI/UX.",
 
         // Proyectos.html
         pro_h1: "Web Projects",
@@ -108,7 +135,12 @@ const translations = {
         tec_p_ts: "Mastery of ES6+ with arrow functions, destructuring, template literals, and modules. Asynchronous management with fetch API, async/await, and Promises. Experience in DOM manipulation, events, localStorage, and advanced data structures like objects and arrays. In addition, development of robust web applications with the addition of TypeScript typing. Experience over 3 years.",
         tec_p_mui: "Creation of professional interfaces with Material UI, using its theme system and customization with sx and styled components. Management of advanced components such as modals, dynamic tables, and Grid System.",
         tec_p_shadcn: "I use the best and most flexible component library in the modern front ecosystem and develop modern and accessible UIs with this marvel. Experience close to 2 years.",
-        tec_p_react: "Development of dynamic web applications and pages with React using reusable components, hooks (useState, useEffect, useRef, useMemo, useCallback), I manage the global context with Context API, Redux, or Zustand, specializing in the latter. I implement routing with React Router and optimize performance with techniques such as memoization and lazy loading. I also manage libraries like TanStack Query and Tables. Experience over 2 years.",
-        tec_p_next: "I work mainly with Next.js to create optimized applications, using static (SSG) and dynamic (SSR) rendering to improve the SEO and performance of my pages. I use API Routes, Server Actions, and Middlewares for backend. I integrate authentication with NextAuth, JWT, or libraries like Clerk, and I model my projects with Tailwind CSS and Shadcn/ui. Experience close to 3 years."
+        tec_p_react: "Development of dynamic web applications and pages with React using reusable components, hooks (useState, useEffect, useRef, useMemo, useCallback); I manage the global context with Context API, Redux, or Zustand, specializing in the latter. I implement routing with React Router and optimize performance with techniques such as memoization and lazy loading. Also, I fluently manage modern ecosystem libraries like TanStack Query and TanStack Table for asynchronous state management and complex massive data visualization. Experience over 2 years.",
+        tec_p_next: "I work mainly with Next.js to create scalable applications, mastering Server Components and Server Actions along with API Routes and Middlewares for advanced full-stack architectures. I integrate modern authentication with Clerk and NextAuth. In addition to hybrid rendering (SSG/SSR), I have experience implementing complex calculations through Azure Functions, intensive CRUD operations, and data modeling in PostgreSQL databases with Drizzle ORM. For advanced utilities, I handle integrations like Excel.js. Experience close to 3 years.",
+        tec_p_drizzle: "Implementation of data architecture using Drizzle ORM, managing PostgreSQL databases for massive and efficient operations in client-server environments, ensuring robust queries 100% typed with TypeScript.",
+        tec_p_supabase: "Experience working with Supabase as a backend-as-a-service and PostgreSQL database. Applying best practices such as Row Level Security (RLS) policies, safe authentication, and leveraging its real-time ecosystem.",
+        tec_p_nest: "Development of robust Back-End applications with Nest.js under its modular object-oriented architecture (with dependency injection) and strongly typed. I have particular experience in implementing Web Sockets (Socket.io) for interactive and collaborative real-time communication.",
+        tec_p_fastapi: "Back-End support and development using FastAPI in Python, focusing on extremely high performance and the rapid construction of RESTful APIs thanks to the integrated OpenAPI standard. Resolution of incidents and fluid integrations with asynchronous endpoints.",
+        tec_p_mongo: "Modeling and effective management of NoSQL databases with MongoDB. Extensive use of the Mongoose ODM library for the creation of models and strict validation schemas, managing scalable data clusters hosted in the cloud with MongoDB Atlas."
     }
 };

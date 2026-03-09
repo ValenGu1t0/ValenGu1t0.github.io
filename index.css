@@ -169,12 +169,59 @@ body {
 /* ////////////////////////////////////////////////////////////////////// SECCION 2.1 - CARDS IZQUIERDA ////////////////// */
 .cards_body_izq {
 
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 2.5rem;
     width: 50%;
 
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    position: relative;
+}
+
+/* ////////// TIMELINE EXPERIENCIA ////////// */
+.timeline_line {
+    position: absolute;
+    left: 1.2rem;
+    top: 2rem;
+    bottom: 2rem;
+    width: 2px;
+    background-color: var(--moregray);
+    z-index: 1;
+}
+
+.timeline_card {
+    position: relative;
+    z-index: 2;
+}
+
+.timeline_card h3 {
+    margin-top: 5px;
+    color: var(--white);
+}
+
+.timeline_dot {
+    position: absolute;
+    left: -2.7rem;
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--letras_link);
+    border: 3px solid var(--gray);
+    box-sizing: content-box;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.timeline_card:hover .timeline_dot {
+    transform: scale(1.3);
+    background-color: var(--white);
+}
+
+.timeline_date {
+    font-size: 0.8rem;
+    color: var(--letras_link);
+    font-weight: 600;
+    margin-bottom: 0px;
 }
 
 
@@ -328,6 +375,7 @@ body {
     padding: 1rem;
     width: 100%;
     height: 3rem;
+    gap: 8rem; /* Mayor distancia entre iconos */
 
     mask-image: linear-gradient(
     to right,
@@ -373,12 +421,6 @@ body {
 .item8 { animation-delay: calc(40s / 9 * (9 - 8) * -1); } 
 
 .item9 { animation-delay: calc(40s / 9 * (9 - 9) * -1); }
-
-
-
-
-
-
 
 /* ////////////////////////////////////////////////////////////////////// SECCION 4 - FOOTER //////////////////////////////// */
 .footer { 
@@ -611,7 +653,10 @@ body {
 
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 100%; align-items: center; padding: 0; }
-    .cards_body_izq, .cards_body_der { width: 100%; padding: 0; }
+    .cards_body_izq { width: 100%; padding: 0 0 0 1.5rem; }
+    .cards_body_der { width: 100%; padding: 0; }
+    .timeline_line { left: 0.2rem; }
+    .timeline_dot { left: -1.7rem; }
     .card_info_der { margin-top: 1rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
@@ -643,7 +688,7 @@ body {
     .centro_body { justify-content: center; align-items: center; }
 
     /* NAV */
-    .nav_caja_botones { width: 100%; height: auto; }
+    .nav_caja_botones { width: 95%; height: auto; padding: 10px 1rem; margin: 0.5rem auto; }
     .boton_nav { font-size: 80%; font-weight: 600; }
     #github { display: none; }
 
@@ -658,7 +703,10 @@ body {
 
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 100%; align-items: center; padding: 0; }
-    .cards_body_izq, .cards_body_der { width: 100%; padding: 0; }
+    .cards_body_izq { width: 100%; padding: 0 0 0 1.5rem; }
+    .cards_body_der { width: 100%; padding: 0; }
+    .timeline_line { left: 0.2rem; }
+    .timeline_dot { left: -1.7rem; }
     .card_info_der { margin-top: 1rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
@@ -690,9 +738,12 @@ body {
     .centro_body { justify-content: center;  align-items: center;   width: 100%;  }
 
     /* NAV */
-    .nav_caja_botones { width: 100%; height: auto; }
+    .nav_caja_botones { width: 100%; height: auto; padding: 10px 1rem; margin: 0.5rem auto; }
     .boton_nav { font-size: 80%; font-weight: 600; }
     #github { display: none; }
+    .nav_caja_botones [data-i18n="nav_inicio"] { display: none; }
+    #themeToggle { display: none; }
+    #langToggle .fa-globe { display: none; }
 
     /* INTRO */
     .inicio_body { width: 100%; }
@@ -704,7 +755,10 @@ body {
 
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 110%; align-items: center; padding: 0; }
-    .cards_body_izq, .cards_body_der { width: 110%; padding: 0;  }
+    .cards_body_izq { width: 110%; padding: 0 0 0 1.5rem; }
+    .cards_body_der { width: 110%; padding: 0; }
+    .timeline_line { left: 0.2rem; }
+    .timeline_dot { left: -1.65rem; }
     .contacto_email input{ width: 60%;}
     .contacto_email button { width: 25%; font-size: 60%; }
     .contacto_email button:hover { width: 25%; font-size: 60%; }
@@ -736,10 +790,13 @@ body {
 
 
     /* NAV */
-    .nav_body { width: 130%; }
-    .nav_caja_botones { width: 110%; margin: 0.5rem; }
+    .nav_body { width: 100%; }
+    .nav_caja_botones { width: 105%; margin: 0.5rem auto; padding: 10px 1rem; }
     .boton_nav { font-size: 80%; font-weight: 600; }
     #github { display: none; }
+    .nav_caja_botones [data-i18n="nav_inicio"] { display: none; }
+    #themeToggle { display: none; }
+    #langToggle .fa-globe { display: none; }
 
 
     /* INTRO */
@@ -754,7 +811,10 @@ body {
 
     /* CARDS DER Y IZQ */
     .cards_body { flex-direction: column; width: 130%; align-items: center; padding: 0; }
-    .cards_body_izq, .cards_body_der { width: 110%; }
+    .cards_body_izq { width: 110%; padding: 0 0 0 1.5rem; }
+    .cards_body_der { width: 110%; }
+    .timeline_line { left: 0.2rem; }
+    .timeline_dot { left: -1.6rem; }
     .contacto_email input { width: 70%; padding: 1px;}
     .contacto_email button { width: 25%; font-size: 60%; }
     .contacto_email button:hover { width: 25%; font-size: 60%; }
